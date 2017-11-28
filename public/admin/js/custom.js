@@ -64,9 +64,7 @@ function xacnhanxoa(msg){
 	}
 	return xac_nhan;
 }
-function openCKFinder(){
-	CKFinder.start();
-}
+
 function changePage(page){
 	$('input[name=filter_page]').val(page);$('form[name="frm"]').submit();}
 $(document).ready(function(){

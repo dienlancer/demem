@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 28, 2017 lúc 12:45 PM
+-- Thời gian đã tạo: Th10 28, 2017 lúc 07:13 PM
 -- Phiên bản máy phục vụ: 10.1.22-MariaDB
 -- Phiên bản PHP: 7.1.4
 
@@ -871,8 +871,6 @@ CREATE TABLE `article_category` (
 INSERT INTO `article_category` (`id`, `article_id`, `category_article_id`, `created_at`, `updated_at`) VALUES
 (50, 7, 2, '2017-11-14 10:54:19', '2017-11-14 10:54:19'),
 (51, 8, 2, '2017-11-14 10:56:23', '2017-11-14 10:56:23'),
-(52, 9, 2, '2017-11-14 10:57:45', '2017-11-14 10:57:45'),
-(54, 11, 2, '2017-11-14 11:00:55', '2017-11-14 11:00:55'),
 (55, 12, 2, '2017-11-14 11:01:52', '2017-11-14 11:01:52'),
 (56, 13, 2, '2017-11-14 11:02:57', '2017-11-14 11:02:57'),
 (57, 14, 2, '2017-11-14 11:04:14', '2017-11-14 11:04:14'),
@@ -885,22 +883,15 @@ INSERT INTO `article_category` (`id`, `article_id`, `category_article_id`, `crea
 (64, 17, 1, '2017-11-14 11:08:22', '2017-11-14 11:08:22'),
 (65, 18, 1, '2017-11-14 11:08:48', '2017-11-14 11:08:48'),
 (66, 19, 1, '2017-11-14 11:10:11', '2017-11-14 11:10:11'),
-(67, 20, 1, '2017-11-14 11:10:29', '2017-11-14 11:10:29'),
-(69, 10, 2, '2017-11-14 17:15:35', '2017-11-14 17:15:35'),
 (78, 23, 0, '2017-11-15 03:34:33', '2017-11-15 03:34:33'),
 (80, 25, 7, '2017-11-21 15:05:25', '2017-11-21 15:05:25'),
 (82, 27, 8, '2017-11-21 15:14:07', '2017-11-21 15:14:07'),
-(83, 28, 9, '2017-11-26 03:18:23', '2017-11-26 03:18:23'),
 (84, 29, 9, '2017-11-26 03:28:47', '2017-11-26 03:28:47'),
 (85, 30, 9, '2017-11-26 03:31:30', '2017-11-26 03:31:30'),
-(86, 31, 10, '2017-11-26 03:33:57', '2017-11-26 03:33:57'),
 (87, 32, 10, '2017-11-26 03:38:19', '2017-11-26 03:38:19'),
 (88, 33, 10, '2017-11-26 03:39:39', '2017-11-26 03:39:39'),
-(89, 34, 11, '2017-11-26 03:42:58', '2017-11-26 03:42:58'),
 (90, 35, 11, '2017-11-26 03:44:03', '2017-11-26 03:44:03'),
 (91, 36, 11, '2017-11-26 03:45:34', '2017-11-26 03:45:34'),
-(92, 37, 12, '2017-11-26 03:46:39', '2017-11-26 03:46:39'),
-(93, 38, 12, '2017-11-26 03:47:42', '2017-11-26 03:47:42'),
 (94, 39, 12, '2017-11-26 03:51:32', '2017-11-26 03:51:32'),
 (95, 40, 12, '2017-11-26 03:52:31', '2017-11-26 03:52:31');
 
@@ -1468,7 +1459,7 @@ INSERT INTO `module_item` (`id`, `fullname`, `item_id`, `position`, `component`,
 (9, 'Bài viết nổi bật', NULL, 'featured-article-leftside', NULL, 1, 9, '2017-11-15 04:41:06', '2017-11-27 06:06:55'),
 (10, 'Sản phẩm nổi bật', NULL, 'featured-product-leftside', NULL, 1, 10, '2017-11-15 18:20:20', '2017-11-27 06:06:55'),
 (11, 'Slideshow', '[{\"id\":25,\"sort_order\":\"1\"}]', 'slideshow', 'article', 1, 3, '2017-11-21 15:07:49', '2017-11-28 08:24:40'),
-(12, 'Nội thất sang trọng', '[{\"id\":27,\"sort_order\":\"1\"}]', 'noi-that-sang-trong', 'article', 1, 2, '2017-11-21 15:21:54', '2017-11-27 06:07:11');
+(12, 'Nội thất sang trọng', '[{\"id\":7,\"sort_order\":\"1\"},{\"id\":9,\"sort_order\":\"2\"}]', 'noi-that-sang-trong', 'product', 1, 2, '2017-11-21 15:21:54', '2017-11-28 17:33:06');
 
 -- --------------------------------------------------------
 
@@ -1645,7 +1636,11 @@ INSERT INTO `persistences` (`id`, `user_id`, `code`, `created_at`, `updated_at`)
 (207, 1, 'qFJkZtCoPK72qECK96tX226VuMubIMBv', '2017-11-27 19:23:06', '2017-11-27 19:23:06'),
 (208, 1, 'yTiyEBo8xE3PfzxTL1GFRVnqqi4ChmIZ', '2017-11-27 20:15:53', '2017-11-27 20:15:53'),
 (209, 1, 'YN8x4updqv0OrIsWStBz2c7ZxI7VO5ug', '2017-11-27 20:17:20', '2017-11-27 20:17:20'),
-(210, 1, 'x7hQhgkMuZN0o2iHU3RSwRYO4o2sIudH', '2017-11-28 01:23:07', '2017-11-28 01:23:07');
+(210, 1, 'x7hQhgkMuZN0o2iHU3RSwRYO4o2sIudH', '2017-11-28 01:23:07', '2017-11-28 01:23:07'),
+(211, 1, 'HaDoQdJMAEQu3WHGpf9Vrne6W6FHblgy', '2017-11-28 07:49:02', '2017-11-28 07:49:02'),
+(213, 1, 'BKxJAT4YzrhXjIENKHEP7UPJS8o5joxV', '2017-11-28 08:54:01', '2017-11-28 08:54:01'),
+(214, 1, '7nfa6snzIukAW8HqSdzegB7QZ6d62pVL', '2017-11-28 10:55:02', '2017-11-28 10:55:02'),
+(215, 1, 'yCgRWaHnluDqqoJuUfmaE8dxkZn13mwL', '2017-11-28 11:09:20', '2017-11-28 11:09:20');
 
 -- --------------------------------------------------------
 
@@ -1808,12 +1803,6 @@ CREATE TABLE `product_category` (
 
 INSERT INTO `product_category` (`id`, `product_id`, `category_product_id`, `created_at`, `updated_at`) VALUES
 (22, 7, 32, '2017-11-13 18:54:33', '2017-11-13 18:54:33'),
-(23, 8, 32, '2017-11-14 07:41:36', '2017-11-14 07:41:36'),
-(24, 9, 32, '2017-11-14 07:42:26', '2017-11-14 07:42:26'),
-(25, 10, 32, '2017-11-14 07:43:14', '2017-11-14 07:43:14'),
-(26, 11, 32, '2017-11-14 07:46:55', '2017-11-14 07:46:55'),
-(27, 12, 32, '2017-11-14 07:47:41', '2017-11-14 07:47:41'),
-(28, 13, 32, '2017-11-14 07:48:50', '2017-11-14 07:48:50'),
 (29, 14, 32, '2017-11-14 07:49:33', '2017-11-14 07:49:33'),
 (30, 15, 32, '2017-11-14 07:50:30', '2017-11-14 07:50:30'),
 (31, 16, 32, '2017-11-14 07:51:26', '2017-11-14 07:51:26'),
@@ -2297,7 +2286,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `group_member_id`, `password`, `permissions`, `last_login`, `fullname`, `image`, `sort_order`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'diennk@dienkim.com', 1, '$2y$10$rpZe6oM3GUJmwL/ZMTKm/OSe24l9TJKFU9lwd8VmohkqH0Oax6rVK', NULL, '2017-11-28 01:23:07', 'Nguyễn Kim Điền', 'nguyen-kim-dien.png', 1, 1, '2017-11-12 07:23:56', '2017-11-28 01:23:07'),
+(1, 'admin', 'diennk@dienkim.com', 1, '$2y$10$rpZe6oM3GUJmwL/ZMTKm/OSe24l9TJKFU9lwd8VmohkqH0Oax6rVK', NULL, '2017-11-28 11:09:20', 'Nguyễn Kim Điền', 'nguyen-kim-dien.png', 1, 1, '2017-11-12 07:23:56', '2017-11-28 11:09:20'),
 (7, 'nguoidung', 'nguoidung@dienkim.com', 2, '$2y$10$SgMd6D2EzSe5t5Hj.gwRN.vdUBTlmFAAZyoduDTlwAq5U0jgIWdwu', NULL, '2017-11-26 20:07:13', 'Người dùng', NULL, 2, 1, '2017-11-26 20:07:01', '2017-11-27 04:57:19');
 
 --
@@ -2528,7 +2517,7 @@ ALTER TABLE `banner`
 -- AUTO_INCREMENT cho bảng `category_article`
 --
 ALTER TABLE `category_article`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT cho bảng `category_product`
 --
@@ -2568,7 +2557,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT cho bảng `menu_type`
 --
 ALTER TABLE `menu_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT cho bảng `migrations`
 --
@@ -2603,7 +2592,7 @@ ALTER TABLE `payment_method`
 -- AUTO_INCREMENT cho bảng `persistences`
 --
 ALTER TABLE `persistences`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=211;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=216;
 --
 -- AUTO_INCREMENT cho bảng `photo`
 --

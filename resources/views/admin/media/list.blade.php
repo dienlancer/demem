@@ -1,8 +1,18 @@
-@extends("admin.master")
-@section("content")
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thư viện</title>
+	<script src="{{asset('public/admin/assets/global/plugins/jquery.min.js')}}" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript" src="{{asset('public/admin/ckeditor/ckeditor.js')}}"                 ></script>
+        <script language="javascript" type="text/javascript" src="{{asset('public/admin/ckfinder/ckfinder.js')}}"                 ></script>
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function(){
+			CKFinder.start();
+		});
+	</script>
+</head>
+<body>
 
-<form class="form-horizontal" role="form" method="POST" name="frm" >	
-	<a href="javascript:void(0);" onclick="openCKFinder();" class="btn green">Media <i class="fa fa-plus"></i></a>
-</form>
-@endsection()         
+</body>
+</html>   
 

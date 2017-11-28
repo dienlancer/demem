@@ -301,13 +301,11 @@ class ModuleItemController extends Controller {
         ksort($data_2); 
         foreach ($data_2 as $key => $value) {
           $sort_input='<center><input name="sort_order" id="sort-order-'.$value['id'].'" sort_order_id="'.$value['id'].'" value="'.$value['sort_order_text'].'" size="3" style="text-align:center"></center>';
-          $item=array(
-              'checked'=>$value['checked'],
+          $item=array(              
               'deleted'=>$value['deleted'],
               'fullname'=>$value['fullname'],
               'id'=>(int)$value['id'],
               'image'=>$value['image'],
-              'is_checked'=>(int)$value['is_checked'],
               'sort_order'=>$sort_input
           ); 
           $data_3[]=$item;   

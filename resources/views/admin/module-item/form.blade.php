@@ -83,7 +83,7 @@ $inputSortJson          =   '<input type="hidden" name="sort_json" id="sort_json
                             <table class="table table-striped table-bordered table-hover table-checkable order-column" id="tbl-item">
                                 <thead>
                                     <tr>
-                                                                                
+                                        <th width="1%"><input type="checkbox" onclick="checkAllAgent(this)"  name="checkall-toggle"></th>                             
                                         <th>Bài viết - Sản phẩm</th>   
                                         <th width="1%">Hình</th>                                                
                                         <th width="1%">Sắp xếp</th>                                                                                
@@ -508,17 +508,17 @@ $inputSortJson          =   '<input type="hidden" name="sort_json" id="sort_json
         var data=new Array(rows.length);
         for(var i=0;i<rows.length;i++){
             var row=rows[i];
-            var cell_sort_order=row.cells[2];
+            var cell_sort_order=row.cells[3];
             var input_sort_order=$(cell_sort_order).find('input[name="sort_order"]');
             var id=parseInt($(input_sort_order).attr('sort_order_id')) ;
             var sort_order_text=$(input_sort_order).val();
-            var fullname=$(row.cells[0]).text();
-            var image=$(row.cells[1]).html();
-            
-            var deleted=$(row.cells[3]).html();
-            var sort_order=$(row.cells[2]).html();
+            var fullname=$(row.cells[1]).text();
+            var image=$(row.cells[2]).html();
+            var checked=$(row.cells[0]).html();
+            var deleted=$(row.cells[4]).html();
+            var sort_order=$(row.cells[3]).html();
             var item={
-                
+                'checked':checked,
                 'is_checked':0,
                 'id':id,
                 'fullname':fullname,
@@ -539,7 +539,7 @@ $inputSortJson          =   '<input type="hidden" name="sort_json" id="sort_json
             url: '<?php echo $linkSortItems; ?>',
             type: 'POST',                        
             data: dataItem,
-            success: function (data, status, jqXHR) {                   
+            success: function (data, status, jqXHR) {           
                 vItemTable.clear().draw();
                 vItemTable.rows.add(data.data_2).draw();                
                 $('form[name="frm"] > input[name="sort_json"]').empty();
@@ -561,7 +561,7 @@ $inputSortJson          =   '<input type="hidden" name="sort_json" id="sort_json
             return false;   
         }
         var tr=$(ctrl).closest('tr');
-        var sort_order_input=$(tr[0].cells[2]).find('input[name="sort_order"]');
+        var sort_order_input=$(tr[0].cells[3]).find('input[name="sort_order"]');
         var sort_order_id=$(sort_order_input).attr('sort_order_id');
         var data = $.parseJSON($('#sort_json').val());        
         var index=0;

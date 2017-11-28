@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 27, 2017 lúc 06:14 PM
+-- Thời gian đã tạo: Th10 28, 2017 lúc 11:38 AM
 -- Phiên bản máy phục vụ: 10.1.22-MariaDB
 -- Phiên bản PHP: 7.1.4
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `megashop`
+-- Cơ sở dữ liệu: `demem`
 --
 
 DELIMITER $$
@@ -831,8 +831,7 @@ INSERT INTO `article` (`id`, `fullname`, `title`, `alias`, `image`, `intro`, `co
 (20, 'Alas', '', 'alas', 'atlas.png', '', '', NULL, '', '', '', 1, 1, '2017-11-14 11:10:29', '2017-11-26 18:28:55'),
 (21, 'Bản quyền', '', 'ban-quyen', NULL, '', '<p style=\"text-align:center\">&copy; Bản quyền thuộc về <strong>DienKim</strong> Team | Cung cấp bởi DienKim</p>', NULL, '', '', '', 1, 1, '2017-11-14 19:22:03', '2017-11-23 14:31:37'),
 (23, 'Giới thiệu', 'Giới thiệu', 'gioi-thieu', 'benzema.jpg', 'Tiền đạo người Pháp từng tức giận trước sự so sánh thiếu tôn trọng từ Jose Mourinho thời ông thầy cũ còn làm việc ở Real Madrid.', '<p style=\"text-align:justify\">Trong một buổi phỏng vấn gần đ&acirc;y với k&ecirc;nh Canal +, Karim Benzema tiết lộ nguy&ecirc;n nh&acirc;n dẫn đến sự bất h&ograve;a giữa anh v&agrave; Jose Mourinho tại Real. Ch&acirc;n s&uacute;t 29 n&oacute;i rằng anh cảm thấy kh&ocirc;ng được t&ocirc;n trọng khi bị HLV so s&aacute;nh với m&egrave;o. Khi ấy, Mourinho n&oacute;i rằng c&oacute; Benzema trong đội h&igrave;nh như &quot;đi săn với một ch&uacute; m&egrave;o thay v&igrave; một ch&uacute; ch&oacute;&quot;.<br />\n&quot;Ch&uacute;ng t&ocirc;i c&oacute; quan hệ tốt cho đến khi &ocirc;ng ta d&ugrave;ng những cụm từ v&agrave; những nhận x&eacute;t qu&aacute; đ&aacute;ng. T&ocirc;i c&oacute; cảm gi&aacute;c l&agrave; &ocirc;ng ấy thấy vui với những c&acirc;u n&oacute;i đ&oacute;, v&agrave; mặc d&ugrave; từng rất t&ocirc;n trọng &ocirc;ng ấy, t&ocirc;i bắt đầu ph&aacute;t c&aacute;u&quot;, Benzema n&oacute;i.</p>\n\n<p style=\"text-align:justify\">&quot;T&ocirc;i n&oacute;i với &ocirc;ng ấy l&agrave; ch&uacute;ng t&ocirc;i cần n&oacute;i chuyện rồi ch&uacute;ng t&ocirc;i c&oacute; một buổi họp trong một tiếng. T&ocirc;i n&oacute;i với &ocirc;ng ấy: &#39;T&ocirc;i l&agrave; cầu thủ, &ocirc;ng l&agrave; HLV của t&ocirc;i v&agrave; t&ocirc;i t&ocirc;n trọng &ocirc;ng nhưng &ocirc;ng cũng cần phải t&ocirc;n trọng t&ocirc;i&#39;&quot;, anh cho biết th&ecirc;m. &quot;Từ sau đ&oacute;, kh&ocirc;ng c&ograve;n c&acirc;u chuyện n&agrave;o về ch&oacute;, m&egrave;o hay bất kỳ thứ g&igrave; kh&aacute;c xuất hiện nữa. T&ocirc;i c&oacute; thể l&agrave; người nh&uacute;t nh&aacute;t, nhưng nếu ai đ&oacute; cười v&agrave;o mặt t&ocirc;i, t&ocirc;i sẽ phản ứng lại. Khi bạn n&oacute;i chuyện thẳng thắn, mọi thứ sẽ tốt hơn&quot;.</p>\n\n<p style=\"text-align:justify\">Sự việc Mourinho so s&aacute;nh Benzema với m&egrave;o, &aacute;m chỉ việc tiền đạo n&agrave;y lười di chuyển, diễn ra trong một buổi họp b&aacute;o v&agrave;o năm 2011. Nh&agrave; cầm qu&acirc;n 54 tuổi bị Real sa thải hai năm sau đ&oacute;.</p>', NULL, '', 'metakeyword giới thiệu', 'metadescription giới thiệu', 9, 1, '2017-11-15 03:28:13', '2017-11-22 15:41:59'),
-(25, 'Banner chính 1', '', 'banner-chinh-1', 'megashop-banner-1.jpg', '', '', NULL, '', '', '', 1, 1, '2017-11-21 15:05:25', '2017-11-21 15:05:25'),
-(26, 'Banner chính 2', '', 'banner-chinh-2', 'megashop-banner-2.jpg', '', '', NULL, '', '', '', 2, 1, '2017-11-21 15:05:48', '2017-11-22 08:10:23'),
+(25, 'Banner chính 1', '', 'banner-chinh-1', 'bg-main.jpg', '', '', '', '', '', '', 1, 1, '2017-11-21 15:05:25', '2017-11-28 08:25:29'),
 (27, 'Nội thất sang trọng', '', 'banner-trai', 'noi-that-sang-trong.jpg', '', '', 'http://noithatgialai.net/', '', '', '', 8, 1, '2017-11-21 15:14:07', '2017-11-23 11:56:47'),
 (28, 'Chăm sóc khách hàng', 'Chăm sóc khách hàng', 'cham-soc-khach-hang', 'sang-trong-1.png', 'Chăm sóc khách hàng', '<p style=\"text-align:justify\">Chương tr&igrave;nh kh&ocirc;ng chỉ gi&uacute;p bạn biết c&aacute;ch chăm s&oacute;c kh&aacute;ch h&agrave;ng một c&aacute;ch chuy&ecirc;n nghiệp, m&agrave; c&ograve;n gi&uacute;p bạn biết c&aacute;ch biến &quot;kh&aacute;ch h&agrave;ng&rdquo; &nbsp;th&agrave;nh &quot;bạn h&agrave;ng&quot;; biến &quot;bạn h&agrave;ng&quot; th&agrave;nh &quot;đối t&aacute;c&quot;.</p>\n\n<p style=\"text-align:justify\">Một doanh nghiệp kinh doanh th&agrave;nh c&ocirc;ng (bất kể đ&oacute; l&agrave; doanh nghiệp dịch vụ, sản xuất, hay thương mại) th&igrave;: (1) Kh&ocirc;ng chỉ chăm s&oacute;c kh&aacute;ch h&agrave;ng (CSKH) trong qu&aacute; tr&igrave;nh b&aacute;n h&agrave;ng (During Sales), m&agrave; c&ograve;n CSKH cả sau b&aacute;n h&agrave;ng (After Sales); (2) Lu&ocirc;n lu&ocirc;n giữ được một &quot;chuẩn mực&quot;, một &quot;đẳng cấp&quot; trong việc CSKH của m&igrave;nh nhờ &quot;sở hữu&quot; một đội ngũ nh&acirc;n sự kinh doanh chuy&ecirc;n nghiệp v&agrave; được đ&agrave;o tạo b&agrave;i bản về &nbsp;b&aacute;n h&agrave;ng v&agrave; chăm s&oacute;c kh&aacute;ch h&agrave;ng.</p>\n\n<p style=\"text-align:justify\">Với những quan điểm như vậy, chương tr&igrave;nh đ&agrave;o tạo &quot;Chăm S&oacute;c Kh&aacute;ch H&agrave;ng&quot; của PACE đ&atilde; ra đời nhằm g&oacute;p phần gi&uacute;p đội ngũ của c&aacute;c c&ocirc;ng ty chuy&ecirc;n nghiệp hơn trong CSKH v&agrave; th&agrave;nh c&ocirc;ng hơn trong b&aacute;n h&agrave;ng.</p>\n\n<p style=\"text-align:justify\">Chương tr&igrave;nh n&agrave;y đ&atilde; được c&aacute;c chuy&ecirc;n gia của PACE nghi&ecirc;n cứu, thiết kế v&agrave; bi&ecirc;n soạn, đồng thời được cải tiến, n&acirc;ng cấp li&ecirc;n tục cho ph&ugrave; hợp với những thay đổi v&agrave; th&aacute;ch thức của m&ocirc;i trường kinh doanh hiện tại.</p>\n\n<p style=\"text-align:justify\">Chương tr&igrave;nh đ&agrave;o tạo n&agrave;y kh&ocirc;ng những gi&uacute;p người tham dự biết c&aacute;ch chăm s&oacute;c kh&aacute;ch h&agrave;ng chuy&ecirc;n nghiệp trong m&ocirc;i trường kinh doanh hiện nay, m&agrave; c&ograve;n gi&uacute;p cho người tham dự: Biết c&aacute;ch ph&aacute;t triển kh&aacute;ch h&agrave;ng v&agrave; tạo ra kh&aacute;ch h&agrave;ng dựa tr&ecirc;n hệ thống kh&aacute;ch h&agrave;ng hiện hữu; Biết c&aacute;ch biến &quot;kh&aacute;ch h&agrave;ng&quot; th&agrave;nh &quot;bạn h&agrave;ng&quot; (kh&aacute;ch h&agrave;ng th&acirc;n thiết) v&agrave; sau đ&oacute;, biến &quot;bạn h&agrave;ng&quot; th&agrave;nh &quot;đối t&aacute;c&quot; (kh&aacute;ch h&agrave;ng muốn m&igrave;nh &ldquo;đồng h&agrave;nh&rdquo; c&ugrave;ng họ trong qu&aacute; tr&igrave;nh ph&aacute;t triển của họ); Biết c&aacute;ch x&acirc;y dựng &quot;văn h&oacute;a b&aacute;n h&agrave;ng&quot; cho bản th&acirc;n; Biết c&aacute;ch chung sức c&ugrave;ng c&ocirc;ng ty x&acirc;y dựng &quot;văn h&oacute;a b&aacute;n h&agrave;ng v&agrave; chăm s&oacute;c kh&aacute;ch h&agrave;ng&quot; chuy&ecirc;n nghiệp - đẳng cấp cho to&agrave;n thể đội ngũ.</p>', '', '', 'Chăm sóc khách hàng', 'Chăm sóc khách hàng', 1, 1, '2017-11-26 03:18:23', '2017-11-26 03:24:47'),
 (29, 'Kiểm tra đơn hàng', 'Man Utd thắng tối thiểu nhờ bàn phản lưới', 'kiem-tra-don-hang', NULL, 'Thầy trò Jose Mourinho giành chiến thắng  1-0, với bàn duy nhất được ghi bởi hậu vệ của Brighton trong khi ngăn chặn cú sút từ Ashely Young.', '<p style=\"text-align:justify\">Man Utd đ&atilde; chặn đ&agrave; t&acirc;m l&yacute; đi xuống sau trận thua Basel với tỷ số 0-1 hồi giữa tuần bằng chiến thắng tối thiểu trước Brington. B&agrave;n duy nhất của đội b&oacute;ng &aacute;o đỏ được t&iacute;nh cho hậu vệ Lewis Dunk của đối thủ, khi anh n&agrave;y nỗ lực ngăn chặn c&uacute; dứt điểm ngo&agrave;i v&ograve;ng cấm của Ashley Young.</p>\n\n<p style=\"text-align:justify\">Đội chủ s&acirc;n Old Trafford ho&agrave;n th&agrave;nh mục ti&ecirc;u c&oacute; ba điểm trọn vẹn nhưng c&aacute;ch họ vượt qua Brington thiếu thuyết phục. Lối chơi tấn c&ocirc;ng thiếu mạch lạc, &iacute;t cơ hội ghi b&agrave;n khiến người h&acirc;m mộ tiếp tục ho&agrave;i nghi về khả năng b&aacute;m đuổi Man City của thầy tr&ograve; Jose Mourinho.<br />\nHLV người Bồ Đ&agrave;o Nha giữ nguy&ecirc;n đội h&igrave;nh trong trận thắng 4-1 trước Newcastle c&aacute;ch đ&acirc;y một tuần, với bộ ba tấn c&ocirc;ng Anthony Martial, Juan Mata v&agrave; Marcus Rashford chơi sau lưng Romelu Lukaku. Sơ đồ n&agrave;y tr&ecirc;n l&yacute; thuyết rất mạnh về tấn c&ocirc;ng, nhưng đội chủ s&acirc;n Old Trafford kh&ocirc;ng thể hiện được điều ấy trước t&acirc;n binh Ngoại hạng Anh m&ugrave;a n&agrave;y.</p>\n\n<p style=\"text-align:justify\">Trong 45 ph&uacute;t đầu ti&ecirc;n, đội b&oacute;ng &aacute;o đỏ kiểm so&aacute;t b&oacute;ng gần 65%, tung được số pha dứt điểm nhiều gấp ba đối thủ, nhưng hầu hết trong số đ&oacute; đều kh&ocirc;ng nguy hiểm. Ph&uacute;t thứ ba, Lukaku đập nhả ở trung lộ, rồi đưa b&oacute;ng sang ch&acirc;n tr&aacute;i sở trường. Tuy nhi&ecirc;n, c&uacute; s&uacute;t sau đ&oacute; của cựu cầu thủ Everton qu&aacute; thiếu ch&iacute;nh x&aacute;c.</p>\n\n<p style=\"text-align:justify\">C&aacute;ch tấn c&ocirc;ng ch&iacute;nh của Man Utd trong hiệp một l&agrave; lật c&aacute;nh đ&aacute;nh đầu. D&ugrave; vậy, trước bộ đ&ocirc;i trung vệ c&oacute; chiều cao vượt ngưỡng 1m90 l&agrave; Shane Duffy v&agrave; Lewis Dunk, &yacute; đồ của Mourinho kh&ocirc;ng mang lại hiệu quả.<br />\nT&igrave;nh huống đ&aacute;ng kể nhất của đội chủ nh&agrave; đến ở ph&uacute;t cuối hiệp một. Rashford tạt b&oacute;ng từ c&aacute;nh phải, đ&uacute;ng vị tr&iacute; của Lukaku. Tiền đạo người Bỉ dứt điểm cận th&agrave;nh từ cự ly chưa đến 5 met, nhưng kh&ocirc;ng thắng được thủ th&agrave;nh Mat Ryan. Pha s&uacute;t bồi sau đ&oacute; của Paul Pogba cũng kh&ocirc;ng đưa được b&oacute;ng v&agrave;o lưới.</p>\n\n<p style=\"text-align:justify\">Brighton chủ động với c&aacute;ch chơi của họ, v&agrave; ch&iacute;nh đội kh&aacute;ch đ&atilde; khiến Man Utd bất ngờ đầu hiệp hai khi d&acirc;ng cao v&agrave; tạo ra những pha uy hiếp về ph&iacute;a khung th&agrave;nh David De Gea. Ph&uacute;t 47, đội b&oacute;ng &aacute;o đỏ su&yacute;t ghi b&agrave;n từ pha d&agrave;n xếp v&agrave; căng ngang b&ecirc;n c&aacute;nh phải. May cho đội chủ nh&agrave; l&agrave; kh&ocirc;ng c&oacute; cầu thủ n&agrave;o đội kh&aacute;ch tận dụng được.</p>\n\n<p style=\"text-align:justify\">Mourinho sốt ruột ngo&agrave;i đường bi&ecirc;n v&agrave; &ocirc;ng tung Zlatan Ibrahimovic v&agrave;o thế chỗ Mata, người chơi kh&ocirc;ng nổi bật trong hơn một giờ c&oacute; mặt tr&ecirc;n s&acirc;n. Bốn ph&uacute;t sau điều chỉnh, Man Utd mở tỷ số trận đấu.<br />\nXuất ph&aacute;t từ t&igrave;nh huống phạt g&oacute;c b&ecirc;n c&aacute;nh phải, b&oacute;ng kh&ocirc;ng được đội kh&aacute;ch ph&aacute; ra dứt kho&aacute;t. Young lao l&ecirc;n, chiếm vị tr&iacute;, rồi s&uacute;t ngay bằng ch&acirc;n tr&aacute;i. B&oacute;ng đập ch&acirc;n trung vệ Lewis Dunk, đổi hướng, bay cầu &acirc;u v&agrave;o g&oacute;c cao khung th&agrave;nh khiến Ryan kh&ocirc;ng kịp trở tay.</p>\n\n<p style=\"text-align:justify\">C&oacute; b&agrave;n thắng nhưng thế trận tấn c&ocirc;ng của Man Utd kh&ocirc;ng s&aacute;ng sủa hơn, bất chấp việc Mourinho tung th&ecirc;m Henrik Mkhitaryan v&agrave;o s&acirc;n. Brington c&oacute; &iacute;t cơ hội bắn ph&aacute;, nhưng những đợt l&ecirc;n b&oacute;ng của t&acirc;n binh Ngoại hạng Anh tiềm ẩn sự nguy hiểm. Nếu may mắn, họ đ&atilde; c&oacute; thể hạ gục De Gea hai lần, ở c&aacute;c ph&uacute;t 75 v&agrave; 85, sau những t&igrave;nh huống đột ph&aacute; v&agrave; căng ngang từ c&aacute;nh tr&aacute;i.</p>\n\n<p style=\"text-align:justify\">Đối phương v&ocirc; duy&ecirc;n, nhưng Man Utd cũng kh&ocirc;ng kh&aacute; hơn. Mourinho xoay chuyển sơ đồ 4-3-3 trong khoảng 15 ph&uacute;t cuối, với Ibrahimovic l&agrave; người đ&aacute; trung t&acirc;m. Tuy nhi&ecirc;n, dấu ấn duy nhất m&agrave; l&atilde;o tướng người Thụy Điển để lại chỉ l&agrave; c&uacute; ch&iacute;ch mũi gi&agrave;y đưa b&oacute;ng chệch cột dọc ở ph&uacute;t 88, sau m&agrave;n đập nhả với Pogba.<br />\nThắng tối thiểu, Man Utd tạm thời r&uacute;t ngắn khoảng c&aacute;ch với Man City xuống c&ograve;n năm điểm. Họ cũng cắt được &quot;c&aacute;i đu&ocirc;i&quot; Tottenham, bởi ở trận đấu c&ugrave;ng giờ, Harry Kane c&ugrave;ng đồng đội bị West Brom cầm ch&acirc;n với tỷ số 1-1.</p>', '', '', 'Man Utd thắng tối thiểu nhờ bàn phản lưới', 'Man Utd thắng tối thiểu nhờ bàn phản lưới', 2, 1, '2017-11-26 03:28:47', '2017-11-26 03:31:49'),
@@ -847,7 +846,8 @@ INSERT INTO `article` (`id`, `fullname`, `title`, `alias`, `image`, `intro`, `co
 (37, 'Đội ngũ chuyên nghiệp', '', 'doi-ngu-chuyen-nghiep', NULL, 'Hôm nay, Mohamed Salah tái ngộ Chelsea, nơi anh đầu quân vào năm 2014 và chỉ chơi 19 trận trước khi bị đẩy đi.', '<p style=\"text-align:justify\">&quot;Ch&uacute;ng t&ocirc;i l&agrave; bạn th&acirc;n v&agrave; đến giờ t&ocirc;i vẫn c&ograve;n giữ li&ecirc;n lạc với Salah&quot;, Eden Hazard chia sẻ về người đồng đội cũ nay trở th&agrave;nh đối thủ. &quot;Salah chắc chắn l&agrave; một cầu thủ rất đẳng cấp. Anh ấy kh&ocirc;ng nhận được cơ hội khi c&ograve;n ở Chelsea. Do HLV hay do những cầu thủ kh&aacute;c? T&ocirc;i kh&ocirc;ng chắc&quot;.<br />\nNg&ocirc;i sao của Chelsea hiện tại n&oacute;i th&ecirc;m: &quot;Anh ấy c&oacute; năng lực nhưng thời điểm đ&oacute; Chelsea c&oacute; t&ocirc;i, Willian v&agrave; Oscar. Thế n&ecirc;n đối với Salah được thi đấu nhiều l&agrave; điều kh&ocirc;ng dễ d&agrave;ng. Nhưng t&ocirc;i lu&ocirc;n biết anh ấy l&agrave; một cầu thủ h&agrave;ng đầu&quot;.</p>\n\n<p style=\"text-align:justify\">Kh&ocirc;ng được trao cơ hội ở Chelsea, Salah đến Fiorentina v&agrave; AS Roma theo dạng cho mượn. Tiền vệ người Ai Cập đ&atilde; t&igrave;m lại phong độ đỉnh cao ở Italy, v&agrave; phần thưởng l&agrave; bản hợp đồng mua đứt từ đội b&oacute;ng thủ đ&ocirc;.</p>\n\n<p style=\"text-align:justify\">Phong độ ch&oacute;i s&aacute;ng của Salah khiến Liverpool chấp nhận bỏ ra mức ph&iacute; chuyển nhượng kỷ lục để đ&oacute;n anh về Anfield. Trở lại Anh, Salah đ&atilde; thuần thục hơn v&agrave; hiện dẫn đầu danh s&aacute;ch &ldquo;dội bom&rdquo; với ch&iacute;n b&agrave;n thắng, vượt những ch&acirc;n s&uacute;t đắt gi&aacute; kh&aacute;c như Alvaro Morata, Romelu Lukaku hay Harry Kane.</p>\n\n<p style=\"text-align:justify\">&quot;T&ocirc;i mừng cho Salah&quot;, Hazard n&oacute;i th&ecirc;m. &quot;Giờ th&igrave; anh ấy đang tr&ecirc;n đỉnh cao, gi&uacute;p Ai Cập dự World Cup v&agrave; l&agrave;m rất tốt ở Liverpool. Chelsea sẽ d&egrave; chừng Salah trong trận đối đầu sắp tới. Chắc chắn t&ocirc;i sẽ xin đổi &aacute;o với anh ấy sau khi trận đấu kết th&uacute;c&quot;.</p>\n\n<p style=\"text-align:justify\">Chelsea sẽ h&agrave;nh qu&acirc;n đến Liverpool, 72 tiếng sau khi ho&agrave;n tất chuyến bay k&eacute;o d&agrave;i năm tiếng rưỡi trở lại Anh từ Azerbaijan khi đ&aacute; Champions League. Hazard kh&ocirc;ng muốn lấy vấn đề n&agrave;y l&agrave;m viện cớ cho vấn đề thể lực. Tiền vệ người Bỉ nhấn mạnh cầu thủ chuy&ecirc;n nghiệp phải quen với việc thi đấu dồn dập.</p>\n\n<p style=\"text-align:justify\">&ldquo;Sự tự tin đang l&ecirc;n cao. Chiến thắng trong tầm tay của Chelsea&rdquo;, Hazard khẳng định.</p>', '', '', '', '', 1, 1, '2017-11-26 03:46:39', '2017-11-26 03:46:39'),
 (38, 'Giá cả hợp lý', '', 'gia-ca-hop-ly', NULL, 'M10 chia sẻ về việc phải khởi đầu trên băng ghế dự bị trong trận Juventus - Barca tại Champions League.', '<p style=\"text-align:justify\">Messi vốn thi đấu kh&ocirc;ng thiếu một ph&uacute;t n&agrave;o cho Barca từ đầu m&ugrave;a giải 2017-2018. Mọi chuyện chỉ thay đổi khi HLV Ernesto Valverde quyết định cho số 10 ngồi ghế dự bị trong trận Juventus - Barca, trận đấu m&agrave; đội ho&agrave; 0-0 v&agrave; đủ điểm để sớm gi&agrave;nh v&eacute; đi tiếp.</p>\n\n<p style=\"text-align:justify\">Theo l&yacute; giải của Valverde, Messi cần nghỉ ngơi để giảm tải cho cơ thể. Hơn nữa, Barca sẽ c&oacute; một trận đấu quan trọng khi gặp Valencia ở v&ograve;ng 13 La Liga sắp tới.</p>\n\n<p style=\"text-align:justify\">Messi chia sẻ với HLV: &quot;T&ocirc;i kh&ocirc;ng th&iacute;ch ngồi ngo&agrave;i, m&agrave; th&iacute;ch thi đấu v&agrave; đ&oacute;ng g&oacute;p cho đội b&oacute;ng tr&ecirc;n s&acirc;n. Nhưng t&ocirc;i hiểu m&ugrave;a giải c&ograve;n d&agrave;i. T&ocirc;i phải chăm s&oacute;c bản th&acirc;n nhiều hơn v&igrave; m&ugrave;a giải sẽ kh&oacute; khăn hơn&quot;.<br />\nValencia hiện chỉ k&eacute;m bốn điểm so với Barca tr&ecirc;n bảng La Liga. Nếu gi&agrave;nh chiến thắng tr&ecirc;n s&acirc;n nh&agrave; ở trận đấu tới, &quot;Bầy dơi&quot; sẽ r&uacute;t ngắn khoảng c&aacute;ch xuống c&ograve;n một điểm v&agrave; l&agrave;m n&oacute;ng cuộc đua v&ocirc; địch.</p>\n\n<p style=\"text-align:justify\">Messi đ&aacute;nh gi&aacute;: &quot;Valencia l&agrave; một đội b&oacute;ng mạnh. Họ cũng c&oacute; một HLV tuyệt vời với những &yacute; tưởng r&otilde; r&agrave;ng. Họ biết ch&iacute;nh x&aacute;c cần chơi như thế n&agrave;o trong mỗi trận đấu. Trận đấu sẽ rất kh&oacute; đối với ch&uacute;ng t&ocirc;i, nhất l&agrave; khi chơi tr&ecirc;n s&acirc;n của Valencia. Nhưng như thường lệ, ch&uacute;ng t&ocirc;i sẽ v&agrave;o s&acirc;n với khao kh&aacute;t lớn v&agrave; chơi để gi&agrave;nh chiến thắng&quot;.</p>', '', '', '', '', 1, 1, '2017-11-26 03:47:42', '2017-11-26 03:47:42'),
 (39, 'Kinh nghiệm trên 20 năm', '', 'kinh-nghiem-tren-20-nam', NULL, 'HLV của Liverpool cho rằng đội bóng nào cũng gặp phải bất lợi về lịch thi đấu trong từng thời điểm của mùa giải.', '<p style=\"text-align:justify\">Antonio Conte cho rằng lịch thi đấu Ngoại hạng Anh &quot;thiếu t&ocirc;n trọng&quot; đội b&oacute;ng của &ocirc;ng. Chelsea phải l&agrave;m kh&aacute;ch của Liverpool chưa đầy 72 giờ sau chuyến h&agrave;nh qu&acirc;n hơn 8.000 kilomet hai chiều tới Azerbaijan, l&agrave;m kh&aacute;ch của Qarabag trong thế buộc phải thắng.&nbsp;</p>\n\n<p style=\"text-align:justify\">&quot;T&ocirc;i c&oacute; nghe Conte ph&agrave;n n&agrave;n về lịch thi đấu, nhưng h&igrave;nh như &ocirc;ng ấy qu&ecirc;n mất, rằng Chelsea đ&atilde; c&oacute; lịch thi đấu dịp Gi&aacute;ng sinh năm ngo&aacute;i v&agrave;o loại tốt nhất&quot;, Jurgen Klopp n&oacute;i với Telegraph.<br />\nLiverpool của Jurgen Klopp c&oacute; nhiều hơn một ng&agrave;y nghỉ so với Chelsea. Cả hai đều c&oacute; phong độ tốt trong thời gian gần đ&acirc;y. Liverpool thắng bốn, h&ograve;a một trong năm trận gần nhất. Với Chelsea, họ thắng bốn, thua một.</p>\n\n<p style=\"text-align:justify\">&quot;Phục hồi thể lực l&agrave; điều quan trọng, nhưng n&oacute; kh&ocirc;ng ảnh hưởng nhiều đến những trận cầu như thế n&agrave;y&quot;, Klopp tiếp tục phản b&aacute;c Conte. &quot;Chelsea đ&atilde; trở về London, v&agrave; họ c&oacute; hai ng&agrave;y để nghỉ ngơi v&agrave; tập luyện. T&ocirc;i nghĩ t&igrave;nh huống họ gặp phải h&ocirc;m nay l&agrave; b&igrave;nh thường&quot;.</p>\n\n<p style=\"text-align:justify\">HLV người Đức tiếp tục viện dẫn lịch thi đấu trong dịp Gi&aacute;ng sinh tới đầu năm mới để b&aacute;c &yacute; kiến của đồng nghiệp đội Chelsea. &quot;Thi đấu ba ng&agrave;y một trận chưa bao giờ l&agrave; vấn đề, theo quan điểm của t&ocirc;i, nhưng hai ng&agrave;y một trận th&igrave; c&oacute;. C&aacute;c đội Ngoại hạng Anh phải duy tr&igrave; cường độ n&agrave;y, với tổng thời gian 12 ng&agrave;y cho ba trận đấu&quot;, Klopp thổ lộ.</p>\n\n<p style=\"text-align:justify\">&quot;Đ&acirc;y cũng l&agrave; t&igrave;nh huống sẽ xảy ra v&agrave;o năm nay, v&agrave; t&ocirc;i kh&ocirc;ng r&otilde; ban tổ chức sẽ giải th&iacute;ch thế n&agrave;o với lịch thi đấu &iacute;t hơn một ng&agrave;y&quot;.</p>', '', '', '', '', 3, 1, '2017-11-26 03:51:32', '2017-11-26 03:51:32'),
-(40, 'Đảm bảo tiến độ', '', 'dam-bao-tien-do', NULL, 'Real sẽ tiếp tục thiếu trung vệ thủ quân Sergio Ramos do chấn thương ở mũi chưa lành.', '<p style=\"text-align:justify\">Ramos d&iacute;nh chấn thương mũi khi chơi trận derby Madrid cuối tuần trước (0-0). Trung vệ thủ qu&acirc;n của Real phải rời s&acirc;n ngay sau hiệp một do m&aacute;u chảy nhiều từ vết thương.</p>\n\n<p style=\"text-align:justify\">Việc nghỉ một trận (Real thắng Apoel 6-0 tại Champions League) chưa thể gi&uacute;p Ramos kịp b&igrave;nh phục. HLV Zinedine Zidane tiếp tục cho trung vệ mang &aacute;o số 4 nghỉ khi tiếp Malaga tối 25/11.</p>\n\n<p style=\"text-align:justify\">Gareth Bale l&agrave; một ng&ocirc;i sao kh&aacute;c phải nghỉ thi đấu b&ecirc;n ph&iacute;a Real. Tiền vệ xứ Wales mới trở lại s&acirc;n tập nhưng chưa b&igrave;nh phục đến mức để HLV Zidane mạo hiểm sử dụng.<br />\nB&ugrave; cho hai sự vắng mặt, Real sẽ c&oacute; Keylor Navas v&agrave; Mateo Kovacic t&aacute;i xuất. Thủ m&ocirc;n người Costa Rica sẽ thi đấu trở lại sau một th&aacute;ng nghỉ thi đấu li&ecirc;n tục, c&ograve;n tiền vệ người Croatia kết th&uacute;c gần hai th&aacute;ng ngồi ngo&agrave;i dưỡng thương.</p>\n\n<p style=\"text-align:justify\">Việc vắng Navas từng g&acirc;y kh&ocirc;ng &iacute;t vấn đề cho Real. Thủ m&ocirc;n dự bị Kiko Casilla chỉ thi đấu ở mức tr&ograve;n vai, chứ chưa thể thay thế ho&agrave;n to&agrave;n ng&ocirc;i sao người Costa Rica.</p>', '', '', '', '', 4, 1, '2017-11-26 03:52:31', '2017-11-26 03:52:31');
+(40, 'Đảm bảo tiến độ', '', 'dam-bao-tien-do', NULL, 'Real sẽ tiếp tục thiếu trung vệ thủ quân Sergio Ramos do chấn thương ở mũi chưa lành.', '<p style=\"text-align:justify\">Ramos d&iacute;nh chấn thương mũi khi chơi trận derby Madrid cuối tuần trước (0-0). Trung vệ thủ qu&acirc;n của Real phải rời s&acirc;n ngay sau hiệp một do m&aacute;u chảy nhiều từ vết thương.</p>\n\n<p style=\"text-align:justify\">Việc nghỉ một trận (Real thắng Apoel 6-0 tại Champions League) chưa thể gi&uacute;p Ramos kịp b&igrave;nh phục. HLV Zinedine Zidane tiếp tục cho trung vệ mang &aacute;o số 4 nghỉ khi tiếp Malaga tối 25/11.</p>\n\n<p style=\"text-align:justify\">Gareth Bale l&agrave; một ng&ocirc;i sao kh&aacute;c phải nghỉ thi đấu b&ecirc;n ph&iacute;a Real. Tiền vệ xứ Wales mới trở lại s&acirc;n tập nhưng chưa b&igrave;nh phục đến mức để HLV Zidane mạo hiểm sử dụng.<br />\nB&ugrave; cho hai sự vắng mặt, Real sẽ c&oacute; Keylor Navas v&agrave; Mateo Kovacic t&aacute;i xuất. Thủ m&ocirc;n người Costa Rica sẽ thi đấu trở lại sau một th&aacute;ng nghỉ thi đấu li&ecirc;n tục, c&ograve;n tiền vệ người Croatia kết th&uacute;c gần hai th&aacute;ng ngồi ngo&agrave;i dưỡng thương.</p>\n\n<p style=\"text-align:justify\">Việc vắng Navas từng g&acirc;y kh&ocirc;ng &iacute;t vấn đề cho Real. Thủ m&ocirc;n dự bị Kiko Casilla chỉ thi đấu ở mức tr&ograve;n vai, chứ chưa thể thay thế ho&agrave;n to&agrave;n ng&ocirc;i sao người Costa Rica.</p>', '', '', '', '', 4, 1, '2017-11-26 03:52:31', '2017-11-26 03:52:31'),
+(41, 'De-centralised modern water treatment systems', '', 'de-centralised-modern-water-treatment-systems', NULL, 'De.mem Pte Ltd’s focus is in de-centralised water treatment with the industrial waste water segment being its main business area. The company designs, builds.', '<p>Cập nhật</p>', '', '', '', '', 1, 1, '2017-11-28 10:33:16', '2017-11-28 10:33:16');
 
 -- --------------------------------------------------------
 
@@ -889,7 +889,6 @@ INSERT INTO `article_category` (`id`, `article_id`, `category_article_id`, `crea
 (69, 10, 2, '2017-11-14 17:15:35', '2017-11-14 17:15:35'),
 (78, 23, 0, '2017-11-15 03:34:33', '2017-11-15 03:34:33'),
 (80, 25, 7, '2017-11-21 15:05:25', '2017-11-21 15:05:25'),
-(81, 26, 7, '2017-11-21 15:05:49', '2017-11-21 15:05:49'),
 (82, 27, 8, '2017-11-21 15:14:07', '2017-11-21 15:14:07'),
 (83, 28, 9, '2017-11-26 03:18:23', '2017-11-26 03:18:23'),
 (84, 29, 9, '2017-11-26 03:28:47', '2017-11-26 03:28:47'),
@@ -1281,7 +1280,7 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`id`, `fullname`, `alias`, `parent_id`, `menu_type_id`, `level`, `sort_order`, `status`, `created_at`, `updated_at`) VALUES
-(6, 'Giới thiệu', 'gioi-thieu', 0, 1, 0, 2, 1, '2017-11-13 04:36:20', '2017-11-26 02:56:17'),
+(6, 'About', 'about', 0, 1, 0, 2, 1, '2017-11-13 04:36:20', '2017-11-28 09:11:58'),
 (9, 'Phòng khách', 'phong-khach', 75, 1, 1, 1, 1, '2017-11-13 04:37:45', '2017-11-26 02:57:38'),
 (10, 'Phòng ngủ', 'phong-phu', 75, 1, 1, 2, 1, '2017-11-13 04:38:12', '2017-11-26 02:57:45'),
 (11, 'Sofa', 'sofa', 75, 1, 1, 3, 1, '2017-11-13 04:38:44', '2017-11-26 17:05:53'),
@@ -1324,10 +1323,9 @@ INSERT INTO `menu` (`id`, `fullname`, `alias`, `parent_id`, `menu_type_id`, `lev
 (67, 'Sofa', 'sofa', 0, 9, 0, 3, 1, '2017-11-15 17:57:02', '2017-11-15 17:57:02'),
 (68, 'Phòng bếp', 'phong-bep', 0, 9, 0, 4, 1, '2017-11-15 17:57:21', '2017-11-15 17:57:21'),
 (69, 'Phòng trẻ em', 'phong-tre-em', 0, 9, 0, 5, 1, '2017-11-15 17:57:44', '2017-11-15 17:57:44'),
-(71, 'Liên hệ', 'lien-he', 0, 1, 0, 5, 1, '2017-11-25 12:25:45', '2017-11-25 12:25:59'),
-(73, 'Trang chủ', '', 0, 1, 0, 1, 1, '2017-11-25 12:33:11', '2017-11-25 12:33:11'),
-(74, 'Tin tức', 'meo-hay-nha-bep', 0, 1, 0, 3, 1, '2017-11-26 02:55:34', '2017-11-26 02:56:17'),
-(75, 'Sản phẩm', 'sofa', 0, 1, 0, 4, 1, '2017-11-26 02:57:24', '2017-11-26 02:58:17'),
+(71, 'Investors', 'investors', 0, 1, 0, 5, 1, '2017-11-25 12:25:45', '2017-11-28 09:13:24'),
+(74, 'Markets', 'markets', 0, 1, 0, 3, 1, '2017-11-26 02:55:34', '2017-11-28 09:12:17'),
+(75, 'What we offers', 'what-we-offers', 0, 1, 0, 4, 1, '2017-11-26 02:57:24', '2017-11-28 09:14:21'),
 (76, 'Tin tức', 'meo-hay-nha-bep', 0, 3, 0, 3, 1, '2017-11-26 03:12:21', '2017-11-26 03:12:27'),
 (77, 'Trang chủ', '', 0, 3, 0, 1, 1, '2017-11-26 03:13:00', '2017-11-26 03:13:00'),
 (78, 'Sản phẩm', 'sofa', 0, 3, 0, 4, 1, '2017-11-26 03:13:41', '2017-11-26 03:13:58'),
@@ -1353,7 +1351,8 @@ INSERT INTO `menu` (`id`, `fullname`, `alias`, `parent_id`, `menu_type_id`, `lev
 (99, 'Phòng bếp', 'phong-bep', 95, 10, 1, 4, 1, '2017-11-27 15:02:37', '2017-11-27 15:16:39'),
 (100, 'Phòng trẻ em', 'phong-tre-em', 95, 10, 1, 5, 1, '2017-11-27 15:03:06', '2017-11-27 15:16:39'),
 (101, 'Liên hệ', 'lien-he', 0, 10, 0, 5, 1, '2017-11-27 15:03:44', '2017-11-27 15:03:44'),
-(102, 'Sofa', 'sofa', 95, 10, 1, 2, 1, '2017-11-27 15:16:25', '2017-11-27 15:16:39');
+(102, 'Sofa', 'sofa', 95, 10, 1, 2, 1, '2017-11-27 15:16:25', '2017-11-27 15:16:39'),
+(113, 'Media', 'cuu-hlv-the-luc-man-utd-he-lo-nhung-bai-tap-ki-la-cua-ronaldo', 0, 1, 0, 6, 1, '2017-11-28 09:13:45', '2017-11-28 09:13:45');
 
 -- --------------------------------------------------------
 
@@ -1378,14 +1377,14 @@ CREATE TABLE `menu_type` (
 
 INSERT INTO `menu_type` (`id`, `fullname`, `theme_location`, `status`, `sort_order`, `created_at`, `updated_at`) VALUES
 (1, 'MainMenu', 'main-menu', 1, 1, '2017-11-13 04:27:56', '2017-11-13 04:55:08'),
-(2, 'CategoryProductHome', 'category-product-home', 1, 2, '2017-11-13 18:14:33', '2017-11-26 17:32:35'),
+(2, 'CategoryProductHome', 'category-product-home', 1, 2, '2017-11-13 18:14:33', '2017-11-28 02:24:37'),
 (3, 'MenuBottomContent', 'menu-bottom-content', 1, 3, '2017-11-14 17:48:19', '2017-11-26 17:23:07'),
 (4, 'Hỗ trợ', 'support', 1, 4, '2017-11-14 18:12:18', '2017-11-26 17:26:59'),
 (5, 'Hướng dẫn mua hàng', 'direction', 1, 5, '2017-11-14 18:14:44', '2017-11-27 15:23:38'),
 (6, 'Chính sách thanh toán', 'policy', 1, 6, '2017-11-14 18:16:57', '2017-11-26 17:32:56'),
 (7, 'Tại sao chọn chúng tôi', 'about-us', 1, 7, '2017-11-14 18:18:49', '2017-11-14 18:21:19'),
 (8, 'Danh mục bài viết', 'category-article', 1, 8, '2017-11-15 04:13:57', '2017-11-26 17:32:57'),
-(9, 'Danh mục sản phẩm', 'category-product', 1, 9, '2017-11-15 17:55:23', '2017-11-27 14:59:08'),
+(9, 'Danh mục sản phẩm', 'category-product', 1, 9, '2017-11-15 17:55:23', '2017-11-28 02:24:37'),
 (10, 'MoileMenu', 'mobile-menu', 1, 10, '2017-11-27 14:58:25', '2017-11-27 14:59:08');
 
 -- --------------------------------------------------------
@@ -1458,7 +1457,7 @@ CREATE TABLE `module_item` (
 --
 
 INSERT INTO `module_item` (`id`, `fullname`, `item_id`, `position`, `component`, `status`, `sort_order`, `created_at`, `updated_at`) VALUES
-(1, 'Featured product', '[{\"id\":7,\"sort_order\":\"1\"},{\"id\":8,\"sort_order\":\"2\"},{\"id\":9,\"sort_order\":\"3\"},{\"id\":10,\"sort_order\":\"4\"},{\"id\":11,\"sort_order\":\"5\"},{\"id\":12,\"sort_order\":\"6\"},{\"id\":13,\"sort_order\":\"7\"},{\"id\":14,\"sort_order\":\"8\"}]', 'featured-product', 'product', 1, 1, '2017-11-10 11:24:02', '2017-11-27 15:22:56'),
+(1, 'De-centralised modern water treatment systems', '[{\"id\":41,\"sort_order\":\"1\"}]', 'de-centralised', 'article', 1, 1, '2017-11-10 11:24:02', '2017-11-28 10:36:51'),
 (2, 'Toilet equipment', '[{\"id\":7,\"sort_order\":\"1\"},{\"id\":8,\"sort_order\":\"2\"},{\"id\":9,\"sort_order\":\"3\"},{\"id\":10,\"sort_order\":\"4\"},{\"id\":11,\"sort_order\":\"5\"},{\"id\":12,\"sort_order\":\"6\"},{\"id\":13,\"sort_order\":\"7\"},{\"id\":14,\"sort_order\":\"8\"}]', 'toilet-equipment', 'product', 1, 11, '2017-11-14 08:51:21', '2017-11-27 06:06:55'),
 (3, 'Chicken equipment', '[{\"id\":7,\"sort_order\":\"1\"},{\"id\":8,\"sort_order\":\"2\"},{\"id\":9,\"sort_order\":\"3\"},{\"id\":10,\"sort_order\":\"4\"},{\"id\":11,\"sort_order\":\"5\"},{\"id\":12,\"sort_order\":\"6\"},{\"id\":13,\"sort_order\":\"7\"},{\"id\":14,\"sort_order\":\"8\"}]', 'chicken-equipment', 'product', 1, 12, '2017-11-14 08:51:53', '2017-11-27 06:06:55'),
 (4, 'Clever house', '[{\"id\":7,\"sort_order\":\"1\"},{\"id\":8,\"sort_order\":\"2\"},{\"id\":9,\"sort_order\":\"3\"},{\"id\":10,\"sort_order\":\"4\"},{\"id\":11,\"sort_order\":\"5\"},{\"id\":12,\"sort_order\":\"6\"},{\"id\":13,\"sort_order\":\"7\"},{\"id\":14,\"sort_order\":\"8\"}]', 'clever-house', 'product', 1, 4, '2017-11-14 08:52:39', '2017-11-27 06:06:55'),
@@ -1468,7 +1467,7 @@ INSERT INTO `module_item` (`id`, `fullname`, `item_id`, `position`, `component`,
 (8, 'Bản quyền', '[{\"id\":21,\"sort_order\":\"1\"}]', 'copyright', 'article', 1, 8, '2017-11-14 19:26:42', '2017-11-27 06:06:55'),
 (9, 'Bài viết nổi bật', NULL, 'featured-article-leftside', NULL, 1, 9, '2017-11-15 04:41:06', '2017-11-27 06:06:55'),
 (10, 'Sản phẩm nổi bật', NULL, 'featured-product-leftside', NULL, 1, 10, '2017-11-15 18:20:20', '2017-11-27 06:06:55'),
-(11, 'Slideshow', '[{\"id\":25,\"sort_order\":\"1\"},{\"id\":26,\"sort_order\":\"2\"}]', 'slideshow', 'article', 1, 3, '2017-11-21 15:07:49', '2017-11-27 06:06:55'),
+(11, 'Slideshow', '[{\"id\":25,\"sort_order\":\"1\"}]', 'slideshow', 'article', 1, 3, '2017-11-21 15:07:49', '2017-11-28 08:24:40'),
 (12, 'Nội thất sang trọng', '[{\"id\":27,\"sort_order\":\"1\"}]', 'noi-that-sang-trong', 'article', 1, 2, '2017-11-21 15:21:54', '2017-11-27 06:07:11');
 
 -- --------------------------------------------------------
@@ -1642,7 +1641,11 @@ INSERT INTO `persistences` (`id`, `user_id`, `code`, `created_at`, `updated_at`)
 (203, 1, 'I0m5QArlodAFsFQj0cfoSiIaJ2ZGgbyg', '2017-11-26 23:06:11', '2017-11-26 23:06:11'),
 (204, 1, '6tDVgt6sfCGnbfPYISYbMzCQKpXm8QKc', '2017-11-27 00:00:05', '2017-11-27 00:00:05'),
 (205, 1, 'R0MhkpKtLCI5fIe1wwCeicZa0ftDQPwx', '2017-11-27 02:16:57', '2017-11-27 02:16:57'),
-(206, 1, 'E69AlB0p8xLhxxNVrs46xwrP0a5wm3KX', '2017-11-27 07:58:05', '2017-11-27 07:58:05');
+(206, 1, 'E69AlB0p8xLhxxNVrs46xwrP0a5wm3KX', '2017-11-27 07:58:05', '2017-11-27 07:58:05'),
+(207, 1, 'qFJkZtCoPK72qECK96tX226VuMubIMBv', '2017-11-27 19:23:06', '2017-11-27 19:23:06'),
+(208, 1, 'yTiyEBo8xE3PfzxTL1GFRVnqqi4ChmIZ', '2017-11-27 20:15:53', '2017-11-27 20:15:53'),
+(209, 1, 'YN8x4updqv0OrIsWStBz2c7ZxI7VO5ug', '2017-11-27 20:17:20', '2017-11-27 20:17:20'),
+(210, 1, 'x7hQhgkMuZN0o2iHU3RSwRYO4o2sIudH', '2017-11-28 01:23:07', '2017-11-28 01:23:07');
 
 -- --------------------------------------------------------
 
@@ -2294,7 +2297,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `group_member_id`, `password`, `permissions`, `last_login`, `fullname`, `image`, `sort_order`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'diennk@dienkim.com', 1, '$2y$10$rpZe6oM3GUJmwL/ZMTKm/OSe24l9TJKFU9lwd8VmohkqH0Oax6rVK', NULL, '2017-11-27 07:58:05', 'Nguyễn Kim Điền', 'nguyen-kim-dien.png', 1, 1, '2017-11-12 07:23:56', '2017-11-27 07:58:05'),
+(1, 'admin', 'diennk@dienkim.com', 1, '$2y$10$rpZe6oM3GUJmwL/ZMTKm/OSe24l9TJKFU9lwd8VmohkqH0Oax6rVK', NULL, '2017-11-28 01:23:07', 'Nguyễn Kim Điền', 'nguyen-kim-dien.png', 1, 1, '2017-11-12 07:23:56', '2017-11-28 01:23:07'),
 (7, 'nguoidung', 'nguoidung@dienkim.com', 2, '$2y$10$SgMd6D2EzSe5t5Hj.gwRN.vdUBTlmFAAZyoduDTlwAq5U0jgIWdwu', NULL, '2017-11-26 20:07:13', 'Người dùng', NULL, 2, 1, '2017-11-26 20:07:01', '2017-11-27 04:57:19');
 
 --
@@ -2510,7 +2513,7 @@ ALTER TABLE `album`
 -- AUTO_INCREMENT cho bảng `article`
 --
 ALTER TABLE `article`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 --
 -- AUTO_INCREMENT cho bảng `article_category`
 --
@@ -2525,7 +2528,7 @@ ALTER TABLE `banner`
 -- AUTO_INCREMENT cho bảng `category_article`
 --
 ALTER TABLE `category_article`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT cho bảng `category_product`
 --
@@ -2560,12 +2563,12 @@ ALTER TABLE `invoice_detail`
 -- AUTO_INCREMENT cho bảng `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 --
 -- AUTO_INCREMENT cho bảng `menu_type`
 --
 ALTER TABLE `menu_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT cho bảng `migrations`
 --
@@ -2600,7 +2603,7 @@ ALTER TABLE `payment_method`
 -- AUTO_INCREMENT cho bảng `persistences`
 --
 ALTER TABLE `persistences`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=211;
 --
 -- AUTO_INCREMENT cho bảng `photo`
 --

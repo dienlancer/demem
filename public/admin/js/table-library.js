@@ -49,7 +49,8 @@ var basicTable = function () {
     };
     var initArticleComponentTable = function () {
         vArticleComponentTable = $('#tbl-article-component').DataTable({
-            columns: [                                
+            columns: [            
+                { data: "checked"            },                          
                 { data: "fullname"      },    
                 { data: "image"      },               
                 { data: "sort_order"    },                               
@@ -58,7 +59,8 @@ var basicTable = function () {
     };
     var initProductComponentTable = function () {
         vProductComponentTable = $('#tbl-product-component').DataTable({
-            columns: [                            
+            columns: [            
+                { data: "checked"            },                      
                 { data: "fullname"      },    
                 { data: "image"      },               
                 { data: "sort_order"    },                               

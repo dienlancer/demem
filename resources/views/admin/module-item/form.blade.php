@@ -70,8 +70,8 @@ $inputSortJson          =   '<input type="hidden" name="sort_json" id="sort_json
                     <div class="form-group col-md-12">
                         <label class="col-md-2 control-label"><b>Lấy dữ liệu từ</b></label>
                         <div class="col-md-10">
-                            <button type="button" class="btn dark btn-outline sbold uppercase btn-article" data-toggle="modal" data-target="#modal-article">ARTICLE</button>
-                            <button type="button" class="btn dark btn-outline sbold uppercase btn-product" data-toggle="modal" data-target="#modal-product">PRODUCT</button>
+                            <button type="button" class="btn dark btn-outline sbold uppercase btn-article" data-toggle="modal" data-target="#modal-article">BÀI VIẾT</button>
+                            <button type="button" class="btn dark btn-outline sbold uppercase btn-product" data-toggle="modal" data-target="#modal-product">SẢN PHẨM</button>
                             <span class="help-block"></span>
                         </div>
                     </div>   

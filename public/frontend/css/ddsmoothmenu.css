@@ -1,9 +1,9 @@
 .ddsmoothmenu{
-font: bold 12px Verdana;
+
 background: transparent; /*background of menu bar (default state)*/
-width: 100%;
+width: 84%;
 display: none;
-margin: 15px 0px 0px 0px
+margin: 0px 0px 0px 0px
 }
 
 .ddsmoothmenu ul{
@@ -25,13 +25,13 @@ margin-left: 0;
 .ddsmoothmenu ul li a{
     display: block;
     background: transparent;
-    padding: 0px 20px;
-    border-right: 1px dashed #7c7c7c;
-    color: #333333;
+    padding:7px 23px;
+    border-right: 0px dashed #7c7c7c;
+    color: #7C7C81;
     text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'baomoi';
-    font-size: 15px;
+    text-transform: capitalize;
+    font-family: "UTM-Neo-Sans-Intel";
+    font-size: 17px;
 }
 .ddsmoothmenu ul > li{
   background: transparent;

@@ -38,7 +38,8 @@ $arrCart=array();
                 foreach ($arrCart as $key => $value){
                   $quantity+=(int)$value['product_quantity'];              
                 }
-              }        
+              }   
+$data_slideshow=getModuleByPosition('slideshow');         
 ?>
 <!DOCTYPE html>
 <html>
@@ -93,15 +94,25 @@ $arrCart=array();
       classname: "ddsmoothmenu",
       contentsource: "markup" 
     });    
+    ddsmoothmenu.init({
+      mainmenuid: "smoothmainmenu-2", 
+      orientation: "h", 
+      classname: "ddsmoothmenu",
+      contentsource: "markup" 
+    });    
     $(document).ready(function(){        
       $(window).bind("scroll", function() {                        
-        if ($(window).scrollTop() > 104) {
-         $("div.bg-header").addClass("fixed");
+        if ($(window).scrollTop() > 38) {
+         $("div.bg-header").hide();
+         $("div.bg-header-2").show();         
        }
        else {
-         $("div.bg-header").removeClass("fixed");
+        $("div.bg-header").show();
+         $("div.bg-header-2").hide();
        }
      });
+      var home_li='<li><a href="<?php echo url('/'); ?>"><img src="<?php echo asset('upload/home.png'); ?>" /></a></li>';
+      $('.mainmenu').prepend(home_li);
     });
   </script>
 </head>
@@ -109,122 +120,104 @@ $arrCart=array();
   <header class="relative header">
     <div class="top-header">
       <div class="container">
-        <div class="col-lg-2 no-padding"><font color="#ffffff">Tư vấn 24/7:</font>&nbsp;<font color="#bbb"><?php echo $contacted_phone; ?></font></div>
-        <div class="col-lg-6 no-padding"><font color="#ffffff">Địa chỉ:</font>&nbsp;<font color="#bbb"><?php echo $address; ?></font></div>
-        <div class="col-lg-4 no-padding">
-          <div class="col-lg-9 no-padding">
-            <ul class="top-user">
-              <?php                                                              
-              if( count($arrUser) == 0 ){
-                ?>
-                <li><a href="<?php echo $register_member_link; ?>" class="header-action-item"><i class="fa fa-unlock" aria-hidden="true"></i>&nbsp;Đăng ký</a></li>
-                <li><a href="<?php echo $account_link; ?>" class="header-action-item"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Đăng nhập</a></li>
-                <?php
-              }else{                                     
-                ?>
-                <li><a class="header-action-item" href="<?php echo $account_link; ?>"><?php echo $arrUser["username"]; ?></a></li>
-                <li><a class="header-action-item" href="<?php echo $security_link; ?>">Đổi mật khẩu</a></li>                                
-                <li><a class="header-action-item" href="<?php echo $invoice_link; ?>">Invoice</a></li>
-                <li><a class="header-action-item" href="<?php echo $logout_link; ?>">Logout</a></li>
-                <?php                                     
-              }
-              ?>       
-            </ul> 
-          </div>                    
-          <div class="col-lg-3 no-padding">
-            <div class="mini-cart dropdown box-cart cart hidden-xs">
-              <a href="<?php echo $cart_link; ?>" >
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Giỏ hàng
-                <span class="cart-total"><?php echo $quantity; ?></span>
-              </a>                            
-            </div>
-          </div>
-          <div class="clr"></div>             
-        </div>       
+        <div class="contact-language">
+          <div class="col-xs-4"><a href="<?php echo url('lien-he'); ?>">Contact Us</a></div>
+          <div class="col-xs-4 "><a href="<?php echo url('/'); ?>">English</a></div>
+          <div class="col-xs-4 "><font color='#ffffff'><i class="fa fa-search" aria-hidden="true"></i></font></div>
+        </div>
       </div>
     </div>
-    <div class="bg-header">
-    <div class="container">        
-        <div class="menu">
-            <div class="col-lg-3 no-padding">                
-                <center><a href="<?php echo url('/'); ?>">                
-                    <img src="<?php echo asset('upload/logo-megashop.png');?>" />
-                </a></center>
-            </div>
-            <div class="col-lg-6 no-padding">                                                
-                     <?php     
-                    $args = array(                         
-                        'menu_class'            => 'mainmenu', 
-                        'menu_id'               => 'main-menu',                         
-                        'before_wrapper'        => '<div id="smoothmainmenu" class="ddsmoothmenu">',
-                        'before_title'          => '',
-                        'after_title'           => '',
-                        'before_wrapper_ul'     =>  '',
-                        'after_wrapper_ul'      =>  '',
-                        'after_wrapper'         => '</div>'     ,
-                        'link_before'           => '', 
-                        'link_after'            => '',                                                                    
-                        'theme_location'        => 'main-menu' ,
-                        'menu_li_actived'       => 'current-menu-item',
-                        'menu_item_has_children'=> 'menu-item-has-children',
-                        'alias'                 => $alias
-                    );                    
-                    wp_nav_menu($args);
-                    ?>                                      
-            </div>
-            <div class="col-lg-3 no-padding">
-                <div class="desktop-box-search">                    
-                    <div class="box-search">
-                        <form action="#" method="get">
-                            <input type="text" name="q" autocomplete="off" placeholder="Tìm kiếm sản phẩm" value="">
-                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </form>
-                        <div class="clr"></div>
-                    </div>
-                    <div class="clr"></div>
-                </div>       
-            </div>      
-            <div class="clr"></div>      
-        </div>      
-    </div>    
-</div>   
-<div class="mobilemenu">
-        <div class="container">
-            <div>
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>                   
-                        </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                          <?php     
-                          $args = array(                         
-                            'menu_class'            => 'nav navbar-nav', 
-                            'menu_id'               => 'mobile-menu',                         
-                            'before_wrapper'        => '',
-                            'before_title'          => '',
-                            'after_title'           => '',
-                            'before_wrapper_ul'     =>  '',
-                            'after_wrapper_ul'      =>  '',
-                            'after_wrapper'         => ''     ,
-                            'link_before'           => '', 
-                            'link_after'            => '',                                                                    
-                            'theme_location'        => 'mobile-menu' ,
-                            'menu_li_actived'       => 'current-menu-item',
-                            'menu_item_has_children'=> 'menu-item-has-children',
-                            'alias'                 => $alias
-                          );                 
-                          wp_nav_menu($args);
-                          ?>             
-                        </div>
-                    </div>
-                </nav>
-            </div>
+    <div class="bg-header-2" style="display: none">
+      <div class="menu">
+          <div class="col-lg-3 no-padding logo">                
+            <a href="<?php echo url('/'); ?>">                
+              <img src="<?php echo asset('upload/logo.png');?>" />
+            </a>
+          </div>
+          <div class="col-lg-9 no-padding">             
+            <?php     
+            $args = array(                         
+              'menu_class'            => 'mainmenu', 
+              'menu_id'               => 'main-menu',                         
+              'before_wrapper'        => '<div id="smoothmainmenu-2" class="ddsmoothmenu">',
+              'before_title'          => '',
+              'after_title'           => '',
+              'before_wrapper_ul'     =>  '',
+              'after_wrapper_ul'      =>  '',
+              'after_wrapper'         => '</div>'     ,
+              'link_before'           => '', 
+              'link_after'            => '',                                                                    
+              'theme_location'        => 'main-menu' ,
+              'menu_li_actived'       => 'current-menu-item',
+              'menu_item_has_children'=> 'menu-item-has-children',
+              'alias'                 => $alias
+            );                    
+            wp_nav_menu($args);
+            ?>    
+            <div class="clr"></div>          
+          </div>
+          <div class="clr"></div>
         </div>
-    </div>    
+    </div>
+    <div class="bg-header">
+      <div class="container">        
+        <div class="menu border-radius-10">
+          <div class="col-lg-3 no-padding logo">                
+            <a href="<?php echo url('/'); ?>">                
+              <img src="<?php echo asset('upload/logo.png');?>" />
+            </a>
+          </div>
+          <div class="col-lg-9 no-padding">             
+            <?php     
+            $args = array(                         
+              'menu_class'            => 'mainmenu', 
+              'menu_id'               => 'main-menu',                         
+              'before_wrapper'        => '<div id="smoothmainmenu" class="ddsmoothmenu">',
+              'before_title'          => '',
+              'after_title'           => '',
+              'before_wrapper_ul'     =>  '',
+              'after_wrapper_ul'      =>  '',
+              'after_wrapper'         => '</div>'     ,
+              'link_before'           => '', 
+              'link_after'            => '',                                                                    
+              'theme_location'        => 'main-menu' ,
+              'menu_li_actived'       => 'current-menu-item',
+              'menu_item_has_children'=> 'menu-item-has-children',
+              'alias'                 => $alias
+            );                    
+            wp_nav_menu($args);
+            ?>    
+            <div class="clr"></div>          
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+    </div>
+    <?php 
+    if(count($data_slideshow) > 0){
+      ?>  
+      <div id="wrapper">
+        <div class="slider-wrapper theme-default">
+          <div id="slider" class="nivoSlider"> 
+            <?php 
+            for($i=0 ; $i < count($data_slideshow) ; $i++ ){
+              $banner=asset('upload/'.$data_slideshow[$i]['image']);
+              ?>
+              <img src="<?php echo $banner; ?>" data-thumb="<?php echo $banner; ?>" alt="" />     
+              <?php
+            } 
+            ?>
+
+          </div>        
+        </div>
+      </div>
+      <script type="text/javascript">
+        jQuery(document).ready(function(){
+          jQuery('#slider').nivoSlider();
+        });    
+      </script> 
+
+      <?php
+    }
+    ?>
   </header>

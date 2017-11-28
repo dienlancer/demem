@@ -1,8 +1,10 @@
 /* begin standard */
 *{margin:0;padding:0;}
-@font-face{font-family:"notoserif";src:url("../fonts/noto-serif.ttf");}
+@font-face{font-family:"notoserif";src:url("../fonts/noto-serif.ttf") format('truetype');}
 @font-face{font-family:"robotocondensed";src:url("../fonts/RobotoCondensed-Regular.woff");}
-@font-face{font-family:"baomoi";src:url("../fonts/baomoi_gdi.ttf");}
+@font-face{font-family:"baomoi";src:url("../fonts/baomoi_gdi.ttf") format('truetype');}
+@font-face{font-family:"UTM-Neo-Sans-Intel";src:url("../fonts/UTM-Neo-Sans-Intel.ttf") format('truetype');}
+@font-face{font-family:"Pe-icon-7-stroke";src:url("../fonts/Pe-icon-7-stroke.ttf") format('truetype');}
 body{font-size:13px;color:#333;background: #f1f1f1}
 table{max-width:100%;}
 p{margin:1em 0;}
@@ -184,11 +186,7 @@ div.owl-nav{
 /* end standard */
 
 .logo {
-    width: 208px;
-    margin: auto;
-    height: 136px;
-    line-height: 136px;
-    text-align: center;
+   text-align: center;
 }
 .logo > img{
 	vertical-align: middle;
@@ -200,10 +198,19 @@ div.topbar{
     padding: 38px 0px
 }
 div.bg-header{
-    background:#F6F6F6;    
-    padding: 10px 0px;
+    background:transparent;    
+    padding: 0px 0px;
     position: absolute;
     top: 38px;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+}
+div.bg-header-2{
+    background:transparent;    
+    padding: 0px 0px;
+    position: fixed;
+    top: 0px;
     left: 0;
     width: 100%;
     z-index: 999999;
@@ -731,9 +738,14 @@ div#modal-alert-add-cart > div.modal-dialog{
     width: 400px;
 }
 div.top-header{
-    background: #333;
+    background:transparent;
     padding: 10px 0px;
     font-family: "baomoi";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+        z-index: 9999;
 }
 ul.top-user{
     list-style: none;
@@ -1064,7 +1076,46 @@ div.menu-scroll{
 header.header{
     padding: 0px 0px 66px 0px;
 }
+div.nivo-directionNav{
+    display: none;
+}
+.theme-default .nivoSlider{
+    box-shadow: 0px 0px 0px 0px #ffffff;
+}
+div.contact-language{
+    float: right;
+    width: 270px;
+}
+div.contact-language a{
+    color: #ffffff;
+    font-family : "UTM-Neo-Sans-Intel";
+  font-size : 13px;
+}
+div.menu{
+background: #ffffff;
+    border: 0px;
 
+    padding: 10px 0px;
+}
+div.logo a > img{
+    width: 186px;
+}
+div.ddsmoothmenu{
+    float: right;
+}
+.container{
+    width: 992px
+}
+ul.mainmenu > li:first-child > a{
+        padding-bottom: 0px;
+    padding-top: 4px;
+}
+ul.mainmenu > li:first-child > a > img{
+    width: 18px;
+}
+div.border-radius-10{
+        border-radius: 10px;
+}
 @media (max-width: 1199px){
     div.phone-number > div{
         display: none;

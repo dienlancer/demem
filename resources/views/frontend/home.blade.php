@@ -19,24 +19,6 @@ $youtube_url=$setting['youtube_url'];
 $instagram_url=$setting['instagram_url'];
 $pinterest_url=$setting['pinterest_url']; 
 $map_url=$setting['map_url'];
-// lấy sản phẩm nổi bật
-$data_featured_product=getModuleByPosition('featured-product');    
-// thiết bị vệ sinh
-$data_toilet_equipment=getModuleByPosition('toilet-equipment');
-// thiết bị bếp
-$data_chicken_equipment=getModuleByPosition('chicken-equipment');
-// nhà thông minh
-$data_clever_house=getModuleByPosition('clever-house');
-// lấy danh sách khách hàng
-$data_customer=getModuleByPosition('customer');    
-// tin mới
-$data_hot_article=getModuleByPosition('hot-article');    
-// đối tác
-$data_partner=getModuleByPosition('partner');    
-// slideshow
-$data_slideshow=getModuleByPosition('slideshow');    
-// banner trái
-$data_banner_trai=getModuleByPosition('noi-that-sang-trong');    
-
 ?>
+
 @endsection()               

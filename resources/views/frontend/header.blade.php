@@ -39,7 +39,8 @@ $arrCart=array();
                   $quantity+=(int)$value['product_quantity'];              
                 }
               }   
-$data_slideshow=getModuleByPosition('slideshow');         
+$data_slideshow=getModuleByPosition('slideshow');      
+$data_de_centralised=getModuleByPosition('de-centralised');         
 ?>
 <!DOCTYPE html>
 <html>
@@ -117,16 +118,73 @@ $data_slideshow=getModuleByPosition('slideshow');
   </script>
 </head>
 <body>
-  <header class="relative header">
-    <div class="top-header">
-      <div class="container">
+  <header class="header">
+    <div class="container relative">
+      <div class="top-header">      
         <div class="contact-language">
           <div class="col-xs-4"><a href="<?php echo url('lien-he'); ?>">Contact Us</a></div>
           <div class="col-xs-4 "><a href="<?php echo url('/'); ?>">English</a></div>
           <div class="col-xs-4 "><font color='#ffffff'><i class="fa fa-search" aria-hidden="true"></i></font></div>
+        </div>      
+      </div>
+      <div class="bg-header">       
+        <div class="menu border-radius-10">
+          <div class="col-lg-3 no-padding logo">                
+            <a href="<?php echo url('/'); ?>">                
+              <img src="<?php echo asset('upload/logo.png');?>" />
+            </a>
+          </div>
+          <div class="col-lg-9 no-padding">             
+            <?php     
+            $args = array(                         
+              'menu_class'            => 'mainmenu', 
+              'menu_id'               => 'main-menu',                         
+              'before_wrapper'        => '<div id="smoothmainmenu" class="ddsmoothmenu">',
+              'before_title'          => '',
+              'after_title'           => '',
+              'before_wrapper_ul'     =>  '',
+              'after_wrapper_ul'      =>  '',
+              'after_wrapper'         => '</div>'     ,
+              'link_before'           => '', 
+              'link_after'            => '',                                                                    
+              'theme_location'        => 'main-menu' ,
+              'menu_li_actived'       => 'current-menu-item',
+              'menu_item_has_children'=> 'menu-item-has-children',
+              'alias'                 => $alias
+            );                    
+            wp_nav_menu($args);
+            ?>    
+            <div class="clr"></div>          
+          </div>
+          <div class="clr"></div>
+        </div>     
+      </div>
+      <div class="de-centralised">
+        <div class="col-lg-5 no-padding">
+          <?php 
+          if(count($data_de_centralised) > 0){
+            for($i=0;$i<count($data_de_centralised);$i++){
+              $permalink=url($data_de_centralised[$i]['alias'].'.html');              
+              $fullname=$data_de_centralised[$i]['fullname'];
+              $intro=$data_de_centralised[$i]['intro'];            
+              ?>
+              <div class="de-centralised-content">
+                <div>
+                  <div class="thanh-ngang"></div>
+                  <div class="clr"></div>
+                </div>
+                <h3><a href="<?php echo $permalink; ?>"><?php echo $fullname; ?></a></h3>
+                <div><?php echo $intro; ?></div>
+              </div>
+              <?php
+            }
+          }
+          ?>
         </div>
+        <div class="col-lg-7 no-padding"></div>
       </div>
     </div>
+    
     <div class="bg-header-2" style="display: none">
       <div class="menu">
           <div class="col-lg-3 no-padding logo">                
@@ -159,40 +217,7 @@ $data_slideshow=getModuleByPosition('slideshow');
           <div class="clr"></div>
         </div>
     </div>
-    <div class="bg-header">
-      <div class="container">        
-        <div class="menu border-radius-10">
-          <div class="col-lg-3 no-padding logo">                
-            <a href="<?php echo url('/'); ?>">                
-              <img src="<?php echo asset('upload/logo.png');?>" />
-            </a>
-          </div>
-          <div class="col-lg-9 no-padding">             
-            <?php     
-            $args = array(                         
-              'menu_class'            => 'mainmenu', 
-              'menu_id'               => 'main-menu',                         
-              'before_wrapper'        => '<div id="smoothmainmenu" class="ddsmoothmenu">',
-              'before_title'          => '',
-              'after_title'           => '',
-              'before_wrapper_ul'     =>  '',
-              'after_wrapper_ul'      =>  '',
-              'after_wrapper'         => '</div>'     ,
-              'link_before'           => '', 
-              'link_after'            => '',                                                                    
-              'theme_location'        => 'main-menu' ,
-              'menu_li_actived'       => 'current-menu-item',
-              'menu_item_has_children'=> 'menu-item-has-children',
-              'alias'                 => $alias
-            );                    
-            wp_nav_menu($args);
-            ?>    
-            <div class="clr"></div>          
-          </div>
-          <div class="clr"></div>
-        </div>
-      </div>
-    </div>
+    
     <?php 
     if(count($data_slideshow) > 0){
       ?>  
@@ -220,4 +245,5 @@ $data_slideshow=getModuleByPosition('slideshow');
       <?php
     }
     ?>
+    
   </header>

@@ -25,7 +25,7 @@ margin-left: 0;
 .ddsmoothmenu ul li a{
     display: block;
     background: transparent;
-    padding:7px 23px;
+    padding:14px 23px 16px 23px;
     border-right: 0px dashed #7c7c7c;
     color: #7C7C81;
     text-decoration: none;

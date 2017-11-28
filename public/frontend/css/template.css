@@ -187,6 +187,7 @@ div.owl-nav{
 
 .logo {
    text-align: center;
+   padding-top:10px
 }
 .logo > img{
 	vertical-align: middle;
@@ -201,7 +202,7 @@ div.bg-header{
     background:transparent;    
     padding: 0px 0px;
     position: absolute;
-    top: 38px;
+    top: 65px;
     left: 0;
     width: 100%;
     z-index: 999999;
@@ -739,7 +740,7 @@ div#modal-alert-add-cart > div.modal-dialog{
 }
 div.top-header{
     background:transparent;
-    padding: 10px 0px;
+    padding: 22px 0px;
     font-family: "baomoi";
     position: absolute;
     top: 0;
@@ -1098,7 +1099,7 @@ background: #ffffff;
     padding: 10px 0px;
 }
 div.logo a > img{
-    width: 186px;
+    width:160px;
 }
 div.ddsmoothmenu{
     float: right;
@@ -1108,13 +1109,44 @@ div.ddsmoothmenu{
 }
 ul.mainmenu > li:first-child > a{
         padding-bottom: 0px;
-    padding-top: 4px;
+    padding-top: 12px;
 }
 ul.mainmenu > li:first-child > a > img{
     width: 18px;
 }
 div.border-radius-10{
-        border-radius: 10px;
+        border-radius: 18px;
+}
+div.de-centralised{
+        background: #ffffff;
+    height: 410px;
+    position: absolute;
+    top: 608px;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+}
+div.thanh-ngang{
+    background: #2BB7E0;
+    height: 2px;
+    width: 50px;
+    float: left;
+}
+div.de-centralised-content {
+    padding: 0px 47px;
+}
+div.de-centralised-content > div:first-child{
+    margin-top: 54px;
+}
+div.de-centralised-content > h3{
+    margin-top: 43px;
+}
+div.de-centralised-content > h3 > a{
+    color: #2BB7E0;
+}
+div.de-centralised-content > div:last-child{
+    margin-top: 28px;
+    color: #7C7C81;
 }
 @media (max-width: 1199px){
     div.phone-number > div{

@@ -208,7 +208,7 @@ class MenuTypeController extends Controller {
               $strID = implode(',',$arrID);       
               $strID = substr($strID, 0,strlen($strID) - 1);            
               $sqlDeleteMenu = "DELETE FROM `menu` WHERE `menu_type_id` IN (".$strID.")";                                 
-              $sqlDeleteMenuType = "DELETE FROM `menu_type` WHERE `id` IN (".$strID.")";                                 
+              $sqlDeleteMenuType = "DELETE FROM `menu_type` WHERE `id` IN (".$strID.")";                    
               DB::statement($sqlDeleteMenu);    
               DB::statement($sqlDeleteMenuType);    
           }

@@ -5,7 +5,7 @@
 @font-face{font-family:"baomoi";src:url("../fonts/baomoi_gdi.ttf") format('truetype');}
 @font-face{font-family:"UTM-Neo-Sans-Intel";src:url("../fonts/UTM-Neo-Sans-Intel.ttf") format('truetype');}
 @font-face{font-family:"Pe-icon-7-stroke";src:url("../fonts/Pe-icon-7-stroke.ttf") format('truetype');}
-body{font-size:13px;color:#333;background: #f1f1f1}
+body{font-size:13px;color:#333;background: #f1f1f1;font-family: 'UTM-Neo-Sans-Intel'}
 table{max-width:100%;}
 p{margin:1em 0;}
 img{max-width:100%;}
@@ -84,7 +84,7 @@ figure{overflow:hidden;position:relative;display:inline-block;vertical-align:top
 figure img{-webkit-transition:all 0.5s linear;transition:all 0.5s linear;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1);}
 figure:hover img{-webkit-transform:scale3d(1.2, 1.2, 1);transform:scale3d(1.2, 1.2, 1);}
 .h-title{
-    font-family: 'notoserif'   
+    
 }
 .btn-default{
     color: #ffffff;
@@ -490,7 +490,7 @@ div.register-mail-bg{
         background: url(../images/newsletter-bg.jpg);
     padding: 95px 0px;
     text-align: center;
-    font-family: 'baomoi';
+    
 }
 div.customer-name{
     color: #ffffff;
@@ -536,7 +536,7 @@ footer.footer{
 h3.footer-title{
     text-transform: uppercase;
     font-size: 18px;
-    font-family: 'baomoi';
+    
     color: #ffffff
 }
 div.bottom-content{
@@ -561,7 +561,7 @@ ul.supportmenu > li > a{
 div.copyright{
     color: #ffffff;
     
-    font-family: 'baomoi'
+    
 }
 h4.single-excerpt{
     text-align: justify;
@@ -577,7 +577,7 @@ div.box-article-img {
 }
 div.box-article-title {
     text-transform: uppercase;
-    font-family: 'robotocondensed';
+    
     font-weight: bold;
     margin-top: 5px;
 }
@@ -741,7 +741,7 @@ div#modal-alert-add-cart > div.modal-dialog{
 div.top-header{
     background:transparent;
     padding: 22px 0px;
-    font-family: "baomoi";
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -834,7 +834,7 @@ div#cart-info > div {
     padding:30px 0px 20px 0px;
 }
 div.re-ship-phone{
-    font-family: 'baomoi';
+    
 }
 .re-ship-phone .item .icon.icon2 {
     background-image: url('../images/ship.png');
@@ -852,7 +852,7 @@ div.re-ship-phone{
     background-position: center;
 }
 div.header-title{
-        font-family: 'baomoi';
+        
     border-bottom: 1px solid #e1e1e1;
     padding: 0px 0px 1px 0px;
 }
@@ -878,12 +878,12 @@ div.product-sale-shop > div:nth-child(4){
     margin-top: 0 ;
 }
 div.box-product-title > a{
-    font-family: 'baomoi';
+    
     font-weight: bold;
     font-size: 14px;
 }
 div.box-product-general-price{
-    font-family: 'baomoi';    
+    
 }
 span.price-regular{
     text-decoration: line-through;
@@ -903,7 +903,7 @@ div.them-vao-gio-hang{
     background: url('../images/bg-them-vao-gio-hang.png');
     color: #ffffff;
     text-transform: uppercase;
-    font-family: 'baomoi';
+    
     padding: 5px 10px;
     width: 130px;
     margin: auto;
@@ -931,7 +931,7 @@ div.twitter{
 }
 div.user-info-blog-comment{
     color: #ffffff;
-    font-family: 'baomoi';
+    
 }
 div.user-comment-info{
     width:210px;
@@ -957,7 +957,7 @@ div.map{
     padding: 20px;
     top: 80px;
     right: 90px;
-    font-family: 'baomoi';
+    
 }
 div.megashop-map{
     color: #ffffff
@@ -992,7 +992,7 @@ div.slogan-title{
 span.follow-us{
         text-transform: uppercase;
     font-weight: bold;
-    font-family: 'baomoi';
+    
     display: block;
     height: 30px;
     line-height: 30px;
@@ -1044,7 +1044,7 @@ ul.bottommenu > li{
     margin-left: 0
 }
 ul.bottommenu > li > a{
-        font-family: 'baomoi';
+        
     font-size: 16px;
     border-right: 1px dotted #000000;
     padding: 0px 10px;
@@ -1055,7 +1055,7 @@ ul.footermenu > li {
 }
 ul.footermenu > li > a{
         color: #ffffff;
-    font-family: 'baomoi';
+    
     display: block;
     background: url(../images/icon_list.png) no-repeat left center;
     padding: 0px 0px 0px 15px;
@@ -1089,7 +1089,7 @@ div.contact-language{
 }
 div.contact-language a{
     color: #ffffff;
-    font-family : "UTM-Neo-Sans-Intel";
+    
   font-size : 13px;
 }
 div.menu{
@@ -1118,13 +1118,16 @@ div.border-radius-10{
         border-radius: 18px;
 }
 div.de-centralised{
-        background: #ffffff;
-    height: 410px;
+        background: transparent;
+  
     position: absolute;
     top: 608px;
     left: 0;
     z-index: 99999;
     width: 100%;
+}
+div.de-centralised > div:first-child{
+   background: #ffffff
 }
 div.thanh-ngang{
     background: #2BB7E0;
@@ -1133,7 +1136,15 @@ div.thanh-ngang{
     float: left;
 }
 div.de-centralised-content {
-    padding: 0px 47px;
+    padding: 0px 47px 0px 47px;
+        min-height: 335px;
+}
+div.read-more-button > a{
+    display: block;
+    border:1px solid #2BB7E0;
+}
+img.featured-video{
+    float: right;
 }
 div.de-centralised-content > div:first-child{
     margin-top: 54px;
@@ -1142,11 +1153,13 @@ div.de-centralised-content > h3{
     margin-top: 43px;
 }
 div.de-centralised-content > h3 > a{
-    color: #2BB7E0;
+        color: #2BB7E0;
+    font-size: 24px;
 }
 div.de-centralised-content > div:last-child{
-    margin-top: 28px;
+        margin-top: 28px;
     color: #7C7C81;
+    font-size: 15px;
 }
 @media (max-width: 1199px){
     div.phone-number > div{

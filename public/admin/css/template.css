@@ -124,3 +124,9 @@ table#tbl-item > tbody > tr > td:first-child{
     text-align: left;
     padding-left:15px 
 }
+div#media-modal > div.modal-dialog{
+    width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

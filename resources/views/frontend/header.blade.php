@@ -166,7 +166,7 @@ $data_de_centralised=getModuleByPosition('de-centralised');
             for($i=0;$i<count($data_de_centralised);$i++){
               $permalink=url($data_de_centralised[$i]['alias'].'.html');              
               $fullname=$data_de_centralised[$i]['fullname'];
-              $intro=$data_de_centralised[$i]['intro'];            
+              $intro=substr($data_de_centralised[$i]['intro'], 0,400).'...' ;            
               ?>
               <div class="de-centralised-content">
                 <div>
@@ -174,14 +174,16 @@ $data_de_centralised=getModuleByPosition('de-centralised');
                   <div class="clr"></div>
                 </div>
                 <h3><a href="<?php echo $permalink; ?>"><?php echo $fullname; ?></a></h3>
-                <div><?php echo $intro; ?></div>
+                <div><?php echo  $intro;  ?></div>
+                <div class="read-more-button"><a href="<?php echo $permalink; ?>">Learn more</a></div>
               </div>
               <?php
             }
           }
           ?>
         </div>
-        <div class="col-lg-7 no-padding"></div>
+        <div class="col-lg-7 no-padding"><center><img src="<?php echo asset('upload/feature-article.png'); ?>"  /></center></div>
+        <div class="clr"></div>
       </div>
     </div>
     
@@ -232,7 +234,6 @@ $data_de_centralised=getModuleByPosition('de-centralised');
               <?php
             } 
             ?>
-
           </div>        
         </div>
       </div>

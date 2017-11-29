@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 28, 2017 lúc 07:13 PM
+-- Thời gian đã tạo: Th10 29, 2017 lúc 07:34 AM
 -- Phiên bản máy phục vụ: 10.1.22-MariaDB
 -- Phiên bản PHP: 7.1.4
 
@@ -27,7 +27,7 @@ DELIMITER $$
 -- Thủ tục
 --
 DROP PROCEDURE IF EXISTS `pro_getArticle`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getArticle` (IN `keyword` VARCHAR(255), IN `strCategoryArticleID` VARCHAR(255))  begin
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getArticle` (IN `keyword` VARCHAR(255), IN `strCategoryArticleID` VARCHAR(255))  begin
 SELECT
     0 AS is_checked
     ,n.id
@@ -70,7 +70,7 @@ SELECT
 end$$
 
 DROP PROCEDURE IF EXISTS `pro_getArticleFrontend`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getArticleFrontend` (IN `keyword` VARCHAR(255), IN `category_id` VARCHAR(255))  SELECT
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getArticleFrontend` (IN `keyword` VARCHAR(255), IN `category_id` VARCHAR(255))  SELECT
     0 AS is_checked
     ,n.id
     ,n.fullname
@@ -87,7 +87,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getArticleFrontend` (IN `keywor
     ORDER BY n.sort_order ASC$$
 
 DROP PROCEDURE IF EXISTS `pro_getArticleFrontendLimit`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getArticleFrontendLimit` (IN `keyword` VARCHAR(255), IN `category_id` VARCHAR(255), IN `position` INT(11), IN `totalItemsPerPage` INT(11))  SELECT
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getArticleFrontendLimit` (IN `keyword` VARCHAR(255), IN `category_id` VARCHAR(255), IN `position` INT(11), IN `totalItemsPerPage` INT(11))  SELECT
     0 AS is_checked
     ,n.id
     ,n.fullname
@@ -130,7 +130,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getArticleFrontendLimit` (IN `k
     LIMIT `position` , `totalItemsPerPage`$$
 
 DROP PROCEDURE IF EXISTS `pro_getBanner`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getBanner` (IN `keyword` VARCHAR(255) charset utf8)  BEGIN
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getBanner` (IN `keyword` VARCHAR(255) charset utf8)  BEGIN
 SELECT 
 	0 AS  is_checked
 	,n.id
@@ -156,7 +156,7 @@ SELECT
     END$$
 
 DROP PROCEDURE IF EXISTS `pro_getCategoryArticle`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getCategoryArticle` (IN `keyword` VARCHAR(255))  BEGIN	
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getCategoryArticle` (IN `keyword` VARCHAR(255))  BEGIN	
     SELECT
     0 AS is_checked,
 	n.id,
@@ -190,7 +190,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getCategoryArticle` (IN `keywor
 END$$
 
 DROP PROCEDURE IF EXISTS `pro_getCategoryArticleLimit`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getCategoryArticleLimit` (IN `keyword` VARCHAR(255), IN `position` INT(11), IN `totalItemsPerPage` INT(11))  SELECT 
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getCategoryArticleLimit` (IN `keyword` VARCHAR(255), IN `position` INT(11), IN `totalItemsPerPage` INT(11))  SELECT 
 	0 AS is_checked,
 	n.id,
 	n.fullname,
@@ -222,7 +222,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getCategoryArticleLimit` (IN `k
     LIMIT `position` , totalItemsPerPage$$
 
 DROP PROCEDURE IF EXISTS `pro_getCategoryProduct`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getCategoryProduct` (IN `keyword` VARCHAR(255) CHARSET utf8)  BEGIN
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getCategoryProduct` (IN `keyword` VARCHAR(255) CHARSET utf8)  BEGIN
 SELECT
     0 AS is_checked,
 	n.id,
@@ -255,7 +255,7 @@ SELECT
 END$$
 
 DROP PROCEDURE IF EXISTS `pro_getCategoryProductLimit`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getCategoryProductLimit` (IN `keyword` VARCHAR(255) CHARSET utf8, IN `position` INT(11), IN `totalItemsPerPage` INT(11))  SELECT 
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getCategoryProductLimit` (IN `keyword` VARCHAR(255) CHARSET utf8, IN `position` INT(11), IN `totalItemsPerPage` INT(11))  SELECT 
 	0 AS is_checked,
 	n.id,
 	n.fullname,
@@ -287,7 +287,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getCategoryProductLimit` (IN `k
     LIMIT `position` , totalItemsPerPage$$
 
 DROP PROCEDURE IF EXISTS `pro_getCustomer`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getCustomer` (IN `keyword` VARCHAR(255) CHARSET utf8)  NO SQL
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getCustomer` (IN `keyword` VARCHAR(255) CHARSET utf8)  NO SQL
 SELECT
     0 AS is_checked,
 	n.id,
@@ -324,7 +324,7 @@ SELECT
     ORDER BY n.sort_order ASC$$
 
 DROP PROCEDURE IF EXISTS `pro_getGroupMember`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getGroupMember` (IN `keyword` VARCHAR(255))  NO SQL
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getGroupMember` (IN `keyword` VARCHAR(255))  NO SQL
 SELECT
 	0 as is_checked
 	,n.id
@@ -345,7 +345,7 @@ SELECT
     ORDER BY n.sort_order ASC$$
 
 DROP PROCEDURE IF EXISTS `pro_getInvoice`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getInvoice` (IN `keyword` VARCHAR(255) CHARSET utf8)  NO SQL
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getInvoice` (IN `keyword` VARCHAR(255) CHARSET utf8)  NO SQL
 SELECT
     0 AS is_checked,
 	n.id,
@@ -386,7 +386,7 @@ SELECT
     ORDER BY n.sort_order ASC$$
 
 DROP PROCEDURE IF EXISTS `pro_getMenu`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getMenu` (IN `keyword` VARCHAR(255), IN `menu_type_id` INT(11))  BEGIN
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getMenu` (IN `keyword` VARCHAR(255), IN `menu_type_id` INT(11))  BEGIN
 SELECT 
 0 AS is_checked
 	,n.id
@@ -422,7 +422,7 @@ SELECT
     END$$
 
 DROP PROCEDURE IF EXISTS `pro_getMenuLimit`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getMenuLimit` (IN `keyword` VARCHAR(255), IN `position` INT(11), IN `totalItemsPerPage` INT(11), IN `menu_type_id` INT(11))  SELECT 
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getMenuLimit` (IN `keyword` VARCHAR(255), IN `position` INT(11), IN `totalItemsPerPage` INT(11), IN `menu_type_id` INT(11))  SELECT 
 	0 AS is_checked,
 	n.id
 	,n.fullname
@@ -457,7 +457,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getMenuLimit` (IN `keyword` VAR
     LIMIT `position` , totalItemsPerPage$$
 
 DROP PROCEDURE IF EXISTS `pro_getMenuType`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getMenuType` (IN `keyword` VARCHAR(255))  BEGIN
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getMenuType` (IN `keyword` VARCHAR(255))  BEGIN
 	SELECT 
 	0 AS is_checked
 	,n.id
@@ -484,7 +484,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getMenuType` (IN `keyword` VARC
 END$$
 
 DROP PROCEDURE IF EXISTS `pro_getModuleItem`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getModuleItem` (IN `keyword` VARCHAR(255))  BEGIN
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getModuleItem` (IN `keyword` VARCHAR(255))  BEGIN
 SELECT 
 	0 AS  is_checked
 	,n.id
@@ -512,7 +512,7 @@ SELECT
     END$$
 
 DROP PROCEDURE IF EXISTS `pro_getPaymentMethod`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getPaymentMethod` (IN `keyword` VARCHAR(255) charset utf8)  BEGIN
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getPaymentMethod` (IN `keyword` VARCHAR(255) charset utf8)  BEGIN
 SELECT 
 	0 AS  is_checked
 	,n.id
@@ -538,7 +538,7 @@ SELECT
     END$$
 
 DROP PROCEDURE IF EXISTS `pro_getPrivilege`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getPrivilege` (IN `keyword` VARCHAR(255) CHARSET utf8)  NO SQL
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getPrivilege` (IN `keyword` VARCHAR(255) CHARSET utf8)  NO SQL
 SELECT
     0 AS is_checked,
 	n.id,
@@ -564,7 +564,7 @@ SELECT
     ORDER BY n.controller ASC , n.sort_order ASC$$
 
 DROP PROCEDURE IF EXISTS `pro_getProduct`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getProduct` (IN `keyword` VARCHAR(255), IN `strCategoryProductID` VARCHAR(255))  begin
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getProduct` (IN `keyword` VARCHAR(255), IN `strCategoryProductID` VARCHAR(255))  begin
 SELECT
     0 AS is_checked
     ,n.id
@@ -603,7 +603,7 @@ SELECT
 end$$
 
 DROP PROCEDURE IF EXISTS `pro_getProductFrontend`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getProductFrontend` (IN `keyword` VARCHAR(255), IN `category_id` VARCHAR(255))  SELECT
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getProductFrontend` (IN `keyword` VARCHAR(255), IN `category_id` VARCHAR(255))  SELECT
     0 AS is_checked
     ,n.id
     ,n.fullname
@@ -620,7 +620,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getProductFrontend` (IN `keywor
     ORDER BY n.sort_order ASC$$
 
 DROP PROCEDURE IF EXISTS `pro_getProductFrontendLimit`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getProductFrontendLimit` (IN `keyword` VARCHAR(255), IN `category_id` VARCHAR(255), IN `position` INT(11), IN `totalItemsPerPage` INT(11))  SELECT
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getProductFrontendLimit` (IN `keyword` VARCHAR(255), IN `category_id` VARCHAR(255), IN `position` INT(11), IN `totalItemsPerPage` INT(11))  SELECT
     0 AS is_checked
     ,n.id
     ,n.code
@@ -661,7 +661,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getProductFrontendLimit` (IN `k
     LIMIT `position` , `totalItemsPerPage`$$
 
 DROP PROCEDURE IF EXISTS `pro_getSettingSystem`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getSettingSystem` (IN `keyword` VARCHAR(255) charset utf8)  BEGIN
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getSettingSystem` (IN `keyword` VARCHAR(255) charset utf8)  BEGIN
 SELECT 
 	0 AS  is_checked
 	,n.id
@@ -687,7 +687,7 @@ SELECT
     END$$
 
 DROP PROCEDURE IF EXISTS `pro_getUser`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `pro_getUser` (IN `keyword` VARCHAR(255), IN `group_member_id` INT)  NO SQL
+CREATE DEFINER=`depnua`@`localhost` PROCEDURE `pro_getUser` (IN `keyword` VARCHAR(255), IN `group_member_id` INT)  NO SQL
 SELECT 
     0 as is_checked
     ,n.id
@@ -847,7 +847,7 @@ INSERT INTO `article` (`id`, `fullname`, `title`, `alias`, `image`, `intro`, `co
 (38, 'Giá cả hợp lý', '', 'gia-ca-hop-ly', NULL, 'M10 chia sẻ về việc phải khởi đầu trên băng ghế dự bị trong trận Juventus - Barca tại Champions League.', '<p style=\"text-align:justify\">Messi vốn thi đấu kh&ocirc;ng thiếu một ph&uacute;t n&agrave;o cho Barca từ đầu m&ugrave;a giải 2017-2018. Mọi chuyện chỉ thay đổi khi HLV Ernesto Valverde quyết định cho số 10 ngồi ghế dự bị trong trận Juventus - Barca, trận đấu m&agrave; đội ho&agrave; 0-0 v&agrave; đủ điểm để sớm gi&agrave;nh v&eacute; đi tiếp.</p>\n\n<p style=\"text-align:justify\">Theo l&yacute; giải của Valverde, Messi cần nghỉ ngơi để giảm tải cho cơ thể. Hơn nữa, Barca sẽ c&oacute; một trận đấu quan trọng khi gặp Valencia ở v&ograve;ng 13 La Liga sắp tới.</p>\n\n<p style=\"text-align:justify\">Messi chia sẻ với HLV: &quot;T&ocirc;i kh&ocirc;ng th&iacute;ch ngồi ngo&agrave;i, m&agrave; th&iacute;ch thi đấu v&agrave; đ&oacute;ng g&oacute;p cho đội b&oacute;ng tr&ecirc;n s&acirc;n. Nhưng t&ocirc;i hiểu m&ugrave;a giải c&ograve;n d&agrave;i. T&ocirc;i phải chăm s&oacute;c bản th&acirc;n nhiều hơn v&igrave; m&ugrave;a giải sẽ kh&oacute; khăn hơn&quot;.<br />\nValencia hiện chỉ k&eacute;m bốn điểm so với Barca tr&ecirc;n bảng La Liga. Nếu gi&agrave;nh chiến thắng tr&ecirc;n s&acirc;n nh&agrave; ở trận đấu tới, &quot;Bầy dơi&quot; sẽ r&uacute;t ngắn khoảng c&aacute;ch xuống c&ograve;n một điểm v&agrave; l&agrave;m n&oacute;ng cuộc đua v&ocirc; địch.</p>\n\n<p style=\"text-align:justify\">Messi đ&aacute;nh gi&aacute;: &quot;Valencia l&agrave; một đội b&oacute;ng mạnh. Họ cũng c&oacute; một HLV tuyệt vời với những &yacute; tưởng r&otilde; r&agrave;ng. Họ biết ch&iacute;nh x&aacute;c cần chơi như thế n&agrave;o trong mỗi trận đấu. Trận đấu sẽ rất kh&oacute; đối với ch&uacute;ng t&ocirc;i, nhất l&agrave; khi chơi tr&ecirc;n s&acirc;n của Valencia. Nhưng như thường lệ, ch&uacute;ng t&ocirc;i sẽ v&agrave;o s&acirc;n với khao kh&aacute;t lớn v&agrave; chơi để gi&agrave;nh chiến thắng&quot;.</p>', '', '', '', '', 1, 1, '2017-11-26 03:47:42', '2017-11-26 03:47:42'),
 (39, 'Kinh nghiệm trên 20 năm', '', 'kinh-nghiem-tren-20-nam', NULL, 'HLV của Liverpool cho rằng đội bóng nào cũng gặp phải bất lợi về lịch thi đấu trong từng thời điểm của mùa giải.', '<p style=\"text-align:justify\">Antonio Conte cho rằng lịch thi đấu Ngoại hạng Anh &quot;thiếu t&ocirc;n trọng&quot; đội b&oacute;ng của &ocirc;ng. Chelsea phải l&agrave;m kh&aacute;ch của Liverpool chưa đầy 72 giờ sau chuyến h&agrave;nh qu&acirc;n hơn 8.000 kilomet hai chiều tới Azerbaijan, l&agrave;m kh&aacute;ch của Qarabag trong thế buộc phải thắng.&nbsp;</p>\n\n<p style=\"text-align:justify\">&quot;T&ocirc;i c&oacute; nghe Conte ph&agrave;n n&agrave;n về lịch thi đấu, nhưng h&igrave;nh như &ocirc;ng ấy qu&ecirc;n mất, rằng Chelsea đ&atilde; c&oacute; lịch thi đấu dịp Gi&aacute;ng sinh năm ngo&aacute;i v&agrave;o loại tốt nhất&quot;, Jurgen Klopp n&oacute;i với Telegraph.<br />\nLiverpool của Jurgen Klopp c&oacute; nhiều hơn một ng&agrave;y nghỉ so với Chelsea. Cả hai đều c&oacute; phong độ tốt trong thời gian gần đ&acirc;y. Liverpool thắng bốn, h&ograve;a một trong năm trận gần nhất. Với Chelsea, họ thắng bốn, thua một.</p>\n\n<p style=\"text-align:justify\">&quot;Phục hồi thể lực l&agrave; điều quan trọng, nhưng n&oacute; kh&ocirc;ng ảnh hưởng nhiều đến những trận cầu như thế n&agrave;y&quot;, Klopp tiếp tục phản b&aacute;c Conte. &quot;Chelsea đ&atilde; trở về London, v&agrave; họ c&oacute; hai ng&agrave;y để nghỉ ngơi v&agrave; tập luyện. T&ocirc;i nghĩ t&igrave;nh huống họ gặp phải h&ocirc;m nay l&agrave; b&igrave;nh thường&quot;.</p>\n\n<p style=\"text-align:justify\">HLV người Đức tiếp tục viện dẫn lịch thi đấu trong dịp Gi&aacute;ng sinh tới đầu năm mới để b&aacute;c &yacute; kiến của đồng nghiệp đội Chelsea. &quot;Thi đấu ba ng&agrave;y một trận chưa bao giờ l&agrave; vấn đề, theo quan điểm của t&ocirc;i, nhưng hai ng&agrave;y một trận th&igrave; c&oacute;. C&aacute;c đội Ngoại hạng Anh phải duy tr&igrave; cường độ n&agrave;y, với tổng thời gian 12 ng&agrave;y cho ba trận đấu&quot;, Klopp thổ lộ.</p>\n\n<p style=\"text-align:justify\">&quot;Đ&acirc;y cũng l&agrave; t&igrave;nh huống sẽ xảy ra v&agrave;o năm nay, v&agrave; t&ocirc;i kh&ocirc;ng r&otilde; ban tổ chức sẽ giải th&iacute;ch thế n&agrave;o với lịch thi đấu &iacute;t hơn một ng&agrave;y&quot;.</p>', '', '', '', '', 3, 1, '2017-11-26 03:51:32', '2017-11-26 03:51:32'),
 (40, 'Đảm bảo tiến độ', '', 'dam-bao-tien-do', NULL, 'Real sẽ tiếp tục thiếu trung vệ thủ quân Sergio Ramos do chấn thương ở mũi chưa lành.', '<p style=\"text-align:justify\">Ramos d&iacute;nh chấn thương mũi khi chơi trận derby Madrid cuối tuần trước (0-0). Trung vệ thủ qu&acirc;n của Real phải rời s&acirc;n ngay sau hiệp một do m&aacute;u chảy nhiều từ vết thương.</p>\n\n<p style=\"text-align:justify\">Việc nghỉ một trận (Real thắng Apoel 6-0 tại Champions League) chưa thể gi&uacute;p Ramos kịp b&igrave;nh phục. HLV Zinedine Zidane tiếp tục cho trung vệ mang &aacute;o số 4 nghỉ khi tiếp Malaga tối 25/11.</p>\n\n<p style=\"text-align:justify\">Gareth Bale l&agrave; một ng&ocirc;i sao kh&aacute;c phải nghỉ thi đấu b&ecirc;n ph&iacute;a Real. Tiền vệ xứ Wales mới trở lại s&acirc;n tập nhưng chưa b&igrave;nh phục đến mức để HLV Zidane mạo hiểm sử dụng.<br />\nB&ugrave; cho hai sự vắng mặt, Real sẽ c&oacute; Keylor Navas v&agrave; Mateo Kovacic t&aacute;i xuất. Thủ m&ocirc;n người Costa Rica sẽ thi đấu trở lại sau một th&aacute;ng nghỉ thi đấu li&ecirc;n tục, c&ograve;n tiền vệ người Croatia kết th&uacute;c gần hai th&aacute;ng ngồi ngo&agrave;i dưỡng thương.</p>\n\n<p style=\"text-align:justify\">Việc vắng Navas từng g&acirc;y kh&ocirc;ng &iacute;t vấn đề cho Real. Thủ m&ocirc;n dự bị Kiko Casilla chỉ thi đấu ở mức tr&ograve;n vai, chứ chưa thể thay thế ho&agrave;n to&agrave;n ng&ocirc;i sao người Costa Rica.</p>', '', '', '', '', 4, 1, '2017-11-26 03:52:31', '2017-11-26 03:52:31'),
-(41, 'De-centralised modern water treatment systems', '', 'de-centralised-modern-water-treatment-systems', NULL, 'De.mem Pte Ltd’s focus is in de-centralised water treatment with the industrial waste water segment being its main business area. The company designs, builds.', '<p>Cập nhật</p>', '', '', '', '', 1, 1, '2017-11-28 10:33:16', '2017-11-28 10:33:16');
+(41, 'De-centralised modern water treatment systems', '', 'de-centralised-modern-water-treatment-systems', NULL, 'De.mem Pte Ltd’s focus is in de-centralised water treatment with the industrial waste water segment being its main business area. The company designs, builds.', '<p>Cập nhật</p>', '', '', '', '', 1, 1, '2017-11-28 10:33:16', '2017-11-29 04:02:08');
 
 -- --------------------------------------------------------
 
@@ -1640,7 +1640,9 @@ INSERT INTO `persistences` (`id`, `user_id`, `code`, `created_at`, `updated_at`)
 (211, 1, 'HaDoQdJMAEQu3WHGpf9Vrne6W6FHblgy', '2017-11-28 07:49:02', '2017-11-28 07:49:02'),
 (213, 1, 'BKxJAT4YzrhXjIENKHEP7UPJS8o5joxV', '2017-11-28 08:54:01', '2017-11-28 08:54:01'),
 (214, 1, '7nfa6snzIukAW8HqSdzegB7QZ6d62pVL', '2017-11-28 10:55:02', '2017-11-28 10:55:02'),
-(215, 1, 'yCgRWaHnluDqqoJuUfmaE8dxkZn13mwL', '2017-11-28 11:09:20', '2017-11-28 11:09:20');
+(215, 1, 'yCgRWaHnluDqqoJuUfmaE8dxkZn13mwL', '2017-11-28 11:09:20', '2017-11-28 11:09:20'),
+(216, 1, 'MGGJU6ro1fY2b2z1EcvXKzOdPtKTT2zw', '2017-11-28 19:41:22', '2017-11-28 19:41:22'),
+(217, 1, 'SLJtXJ0dgUrwdDJz94YalkoxhHy7vACb', '2017-11-28 21:56:31', '2017-11-28 21:56:31');
 
 -- --------------------------------------------------------
 
@@ -2256,7 +2258,13 @@ INSERT INTO `throttle` (`id`, `user_id`, `type`, `ip`, `created_at`, `updated_at
 (323, 1, 'user', NULL, '2017-11-27 00:24:45', '2017-11-27 00:24:45'),
 (324, NULL, 'global', NULL, '2017-11-27 00:24:45', '2017-11-27 00:24:45'),
 (325, NULL, 'ip', '127.0.0.1', '2017-11-27 00:24:45', '2017-11-27 00:24:45'),
-(326, 1, 'user', NULL, '2017-11-27 00:24:45', '2017-11-27 00:24:45');
+(326, 1, 'user', NULL, '2017-11-27 00:24:45', '2017-11-27 00:24:45'),
+(327, NULL, 'global', NULL, '2017-11-28 20:57:04', '2017-11-28 20:57:04'),
+(328, NULL, 'ip', '127.0.0.1', '2017-11-28 20:57:04', '2017-11-28 20:57:04'),
+(329, 1, 'user', NULL, '2017-11-28 20:57:04', '2017-11-28 20:57:04'),
+(330, NULL, 'global', NULL, '2017-11-28 21:52:01', '2017-11-28 21:52:01'),
+(331, NULL, 'ip', '127.0.0.1', '2017-11-28 21:52:01', '2017-11-28 21:52:01'),
+(332, 1, 'user', NULL, '2017-11-28 21:52:01', '2017-11-28 21:52:01');
 
 -- --------------------------------------------------------
 
@@ -2286,7 +2294,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `group_member_id`, `password`, `permissions`, `last_login`, `fullname`, `image`, `sort_order`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'diennk@dienkim.com', 1, '$2y$10$rpZe6oM3GUJmwL/ZMTKm/OSe24l9TJKFU9lwd8VmohkqH0Oax6rVK', NULL, '2017-11-28 11:09:20', 'Nguyễn Kim Điền', 'nguyen-kim-dien.png', 1, 1, '2017-11-12 07:23:56', '2017-11-28 11:09:20'),
+(1, 'admin', 'diennk@dienkim.com', 1, '$2y$10$rpZe6oM3GUJmwL/ZMTKm/OSe24l9TJKFU9lwd8VmohkqH0Oax6rVK', NULL, '2017-11-28 21:56:31', 'Nguyễn Kim Điền', 'nguyen-kim-dien.png', 1, 1, '2017-11-12 07:23:56', '2017-11-28 21:56:31'),
 (7, 'nguoidung', 'nguoidung@dienkim.com', 2, '$2y$10$SgMd6D2EzSe5t5Hj.gwRN.vdUBTlmFAAZyoduDTlwAq5U0jgIWdwu', NULL, '2017-11-26 20:07:13', 'Người dùng', NULL, 2, 1, '2017-11-26 20:07:01', '2017-11-27 04:57:19');
 
 --
@@ -2592,7 +2600,7 @@ ALTER TABLE `payment_method`
 -- AUTO_INCREMENT cho bảng `persistences`
 --
 ALTER TABLE `persistences`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=216;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=218;
 --
 -- AUTO_INCREMENT cho bảng `photo`
 --
@@ -2632,7 +2640,7 @@ ALTER TABLE `setting_system`
 -- AUTO_INCREMENT cho bảng `throttle`
 --
 ALTER TABLE `throttle`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=327;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=333;
 --
 -- AUTO_INCREMENT cho bảng `users`
 --
